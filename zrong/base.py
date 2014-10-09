@@ -107,6 +107,6 @@ def writeFile(filePath, txt):
     with open(filePath, mode="w",encoding="utf-8") as afile:
         afile.write(txt)
 
-def write_by_templ(templ, target, sub_value):
+def writeByTempl(templ, target, sub_value):
     templ_txt = readFile(templ)
     writeFile(target, Template(templ_txt).substitute(sub_value))
