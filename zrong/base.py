@@ -46,7 +46,7 @@ class DictBase(dict):
 
     def readFromFile(self, path):
         if not os.path.exists(path):
-            slog.warinig("The file %s is not exist.", path)
+            slog.warning("The file %s is not exist.", path)
             return False
         txt = readFile(path)
         dic = eval(txt)
@@ -75,8 +75,7 @@ def listDir(sou_dir, include_root=None, include_file=True):
                 new_list.append(cur_file)
     return new_list
 
-def getFiles(path,ext=[], include=True):
-    files = []
+def getFiles(path, ext=[], include=True):
     has_ext = len(ext)>0
     for p, d, fs in os.walk(path):
         for f in fs:
@@ -88,10 +87,9 @@ def getFiles(path,ext=[], include=True):
                         break
                 if (include and in_ext) or \
                 (not include and not in_ext):
-                    files.append(os.path.join(p,f))
+                    yield os.path.join(p,f)
             else:
-                files.append(os.path.join(p, f))
-    return files
+                yield os.path.join(p, f)
 
 def readFile(filePath):
     with open(filePath, mode="r",encoding="utf-8") as afile:
