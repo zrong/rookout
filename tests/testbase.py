@@ -20,6 +20,15 @@ class TestDictBase:
     def test_dump(self):
         self._dict.dump()
 
+    def test_copyFromDict(self):
+        nestedDict = dict(
+                a = 1,
+                b = {'bb':{'bbb':{'bbbb':2}}},
+                )
+        newDict = base.DictBase()
+        newDict.copyFromDict(nestedDict)
+        assert newDict.a == 1 and newDict.b.bb.bbb.bbbb == 2
+
     def test_saveToFile(self):
         fileName = "__TEST_DICT_BASE_WRITE_TO_FILE__.py"
         filePath =  os.path.join(workDir, fileName)

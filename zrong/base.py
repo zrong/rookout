@@ -23,12 +23,16 @@ class DictBase(dict):
     def __delattr__(self, name):
         del self[name]
 
-    def copyFromDict(self, adict):
+    def copyFromDict(self, adict, parent=None):
+        if not parent:
+            parent = self
         for k,v in adict.items():
             if isinstance(v, dict):
-                self[k] = DictBase(v)
+                vDict = DictBase(v)
+                self.copyFromDict(v, vDict)
+                parent[k] = vDict
             else:
-                self[k] = v
+                parent[k] = v
 
     def dump(self, human=False):
         txt = str(self)
