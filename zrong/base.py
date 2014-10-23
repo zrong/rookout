@@ -4,11 +4,14 @@
 
 import os
 import logging
+import hashlib
 from string import Template
+
 
 # log for system debug
 slog = logging.getLogger("system")
 __LOG_FMT = logging.Formatter("%(asctime)s %(levelname)-8s %(message)s\n")
+
 
 class DictBase(dict):
     def __missing__(self, key):
@@ -56,6 +59,11 @@ class DictBase(dict):
         dic = eval(txt)
         self.copyFromDict(dic)
         return True
+
+
+class ZrongError(Exception):
+    pass
+
 
 def addLoggerHandler(log, handler=None, debug=None, fmt=None):
     if debug:
@@ -112,3 +120,10 @@ def writeFile(filePath, txt):
 def writeByTempl(templ, target, sub_value):
     templ_txt = readFile(templ)
     writeFile(target, Template(templ_txt).substitute(sub_value))
+
+def getMD5(path):
+    with open(path,'rb') as f:
+        md5obj = hashlib.md5()
+        md5obj.update(f.read())
+        return md5obj.hexdigest()
+    raise ZrongError("Error when get md5 for %s!"%path)

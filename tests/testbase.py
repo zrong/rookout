@@ -55,3 +55,5 @@ def test_writeFile():
     base.writeFile(filePath, filePath)
     os.remove(filePath)
 
+def test_getMD5():
+    assert len(base.getMD5(__file__)) == 32
