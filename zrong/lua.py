@@ -1,4 +1,13 @@
 # port from https://github.com/SirAnthony/slpp
+#
+"""
+.. module:: lua
+   :platform: Unix, Windows
+   :synopsis: lua-python 解析模块。
+
+.. moduleauthor:: zrong(zengrong.net)
+
+"""
 import re
 from zrong.base import ZrongError
 
@@ -12,6 +21,7 @@ ERRORS = {
 
 
 class Lua:
+    """进行 lua 标准 table 和 python 数据之间的转换。使用 python re 模块进行解析。"""
 
     def __init__(self):
         self.text = ''
@@ -246,3 +256,4 @@ class Lua:
 
 
 lua = Lua()
+"""一个默认的 lua 模块"""

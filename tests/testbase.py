@@ -41,7 +41,7 @@ def setup():
     workDir = os.path.split(os.path.abspath(__file__))[0]
 
 def test_listDir():
-    assert len(base.listDir(workDir)) > 0
+    assert len(list(base.listDir(workDir))) > 0
 
 def test_getFiles():
     assert len(list(base.getFiles(workDir))) > 0
