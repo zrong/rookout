@@ -13,6 +13,7 @@
 """
 
 import os
+import shutil
 import logging
 import hashlib
 from string import Template
@@ -146,11 +147,33 @@ def listDir(sourceDir, includeSource=None, includeFile=True):
         if cur_file.lower() == ".ds_store":
             continue
         pathWithSource = os.path.join(sourceDir, cur_file)
-        if includeSource or os.path.isdir(pathWithSource):
+        if includeFile or os.path.isdir(pathWithSource):
             if includeSource:
                 yield pathWithSource
             else:
                 yield cur_file
+
+def copyDir(souDir, dstDir, delDst=False):
+    """:func:`shutil.copytree()` 也能实现类似功能，
+    但前者要求目标文件夹必须不存在。
+    而 copyDir 没有这个要求，它可以将 souDir 中的文件合并到 dstDir 中。
+
+    :param str souDir: 待复制的文件夹；
+    :param str dstDir: 目标文件夹；
+    :param bool delDst: 是否删除目标文件夹。
+
+    """
+    if delDst and os.path.isdir(delDst):
+        shutil.rmtree(dstDir)
+    os.makedirs(dstDir, exist_ok=True)
+    for cur_file in listDir(souDir):
+        dst_file = os.path.join(dstDir, cur_file)
+        cur_file = os.path.join(souDir, cur_file)
+        if os.path.isdir(cur_file):
+            os.makedirs(dst_file, exist_ok=True)
+            copyDir(cur_file, dst_file)
+        else:
+            shutil.copyfile(cur_file, dst_file)
 
 def getFiles(path, ext=[], include=True):
     """遍历提供的文件夹的所有子文件夹，饭后生成器对象。

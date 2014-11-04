@@ -1,5 +1,6 @@
-from zrong import base
 import os
+import shutil
+from zrong import base
 
 workDir = None
 
@@ -35,13 +36,19 @@ class TestDictBase:
         self._dict.saveToFile(filePath)
         os.remove(filePath)
 
-
 def setup():
     global workDir
     workDir = os.path.split(os.path.abspath(__file__))[0]
 
 def test_listDir():
     assert len(list(base.listDir(workDir))) > 0
+
+def test_copyDir():
+    dirName = "__TEST_COPY_DIR__"
+    dstPath = os.path.join(workDir, dirName)
+    souPath = os.path.join(workDir, os.pardir, 'zrong')
+    base.copyDir(souPath, dstPath, True)
+    shutil.rmtree(dstPath)
 
 def test_getFiles():
     assert len(list(base.getFiles(workDir))) > 0
