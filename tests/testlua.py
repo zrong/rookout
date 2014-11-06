@@ -1,6 +1,6 @@
 # The test is from https://github.com/SirAnthony/slpp
 
-from zrong.lua import lua
+import zrong.lua as lua
 import os
 
 def setup():
@@ -22,6 +22,11 @@ def is_iterator(obj):
 def test_iterator():
     assert is_iterator(list()) is True
     assert is_iterator(int) is False
+
+def test_decode_file():
+    luafile = os.path.join(os.path.split(__file__)[0], 'ani_def_sample.lua')
+    adict = lua.decode_file(luafile)
+    assert len(adict['spritesheets']) == 2
 
 def differ(value, origin):
     """

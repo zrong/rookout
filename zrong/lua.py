@@ -9,9 +9,10 @@
 
 """
 import re
-from zrong.base import ZrongError
+from zrong.base import ZrongError, readFile, slog
 
 ERRORS = {
+    'unexp_table': u'Unexpected structure while parsing Lua string.',
     'unexp_end_string': u'Unexpected end of string while parsing Lua string.',
     'unexp_end_table': u'Unexpected end of table while parsing Lua string.',
     'mfnumber_minus': u'Malformed number (no digits after initial minus).',
@@ -40,9 +41,16 @@ class Lua:
         #FIXME: only short comments removed
         reg = re.compile('--.*$', re.M)
         text = reg.sub('', text, 0)
-        self.text = text
+        tstart = text.find('{')
+        tend = text.rfind('}')
+        if tstart < 0 and tend < 0:
+            self.text = text
+        elif tstart < 0 or tend < 0:
+            raise ZrongError(ERRORS['unexp_table'])
+        else:
+            self.text = text[tstart:tend+1]
         self.at, self.ch, self.depth = 0, '', 0
-        self.len = len(text)
+        self.len = len(self.text)
         self.next_chr()
         result = self.value()
         return result
@@ -257,3 +265,35 @@ class Lua:
 
 lua = Lua()
 """一个默认的 lua 模块"""
+
+def decode_file(luafile):
+    """将 lua文件 解析成 python 对象。
+    将 luafile 解析成字符串，然后调用 :func:`zrong.lua.Lua.decode()` 。
+
+    :param str luafile: lua文件路径。
+    :return: python 对象
+    :raise: :class:`zrong.base.ZrongError`
+
+    """
+    luastr = readFile(luafile)
+    return decode(luastr)
+
+def decode(text):
+    """将 lua 解析成 python 对象。
+
+    :param str text: lua字符串
+    :return: python 对象
+    :raise: :class:`zrong.base.ZrongError`
+
+    """
+    return lua.decode(text)
+
+def encode(obj):
+    """将 python 对象解析成 lua 字符串。
+
+    :param object obj: 一个 python 对象。
+    :return: 一个 lua 格式的字符串。
+
+    """
+    return lua.encode(obj)
+

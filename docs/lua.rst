@@ -2,6 +2,5 @@ zrong.lua module
 =================
 
 .. automodule:: zrong.lua
-   :members:
-   :undoc-members:
+   :members: decode, decode_file, encode
    :show-inheritance:
