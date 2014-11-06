@@ -268,7 +268,7 @@ lua = Lua()
 
 def decode_file(luafile):
     """将 lua文件 解析成 python 对象。
-    将 luafile 解析成字符串，然后调用 :func:`zrong.lua.Lua.decode()` 。
+    将 luafile 解析成字符串，然后调用 :func:`zrong.lua.decode()` 。
 
     :param str luafile: lua文件路径。
     :return: python 对象
@@ -280,6 +280,44 @@ def decode_file(luafile):
 
 def decode(text):
     """将 lua 解析成 python 对象。
+    text 可以是标准的 lua 字符串、或者直接是一个对象。
+
+    下面的代码都能够通过测试：
+
+    整数和浮点数：
+
+    >>> assert lua.decode('3') == 3
+    >>> assert lua.decode('4.1') == 4.1
+
+    负浮点数：
+
+    >>> assert lua.decode('-0.45') == -0.45
+
+    科学计数法：
+
+    >>> assert lua.decode('3e-7') == 3e-7
+    >>> assert lua.decode('-3.23e+17') == -3.23e+17
+
+    十六进制：
+
+    >>> assert lua.decode('0x3a') == 0x3a
+
+    字符串转义：
+
+    >>> assert lua.decode(r"'test\'s string'") == "test's string"
+
+    table：
+
+    >>> data = '{ array = { 65, 23, 5 }, dict = { string = "value", array = { 3, 6, 4}, mixed = { 43, 54.3, false, string = "value", 9 } } }'
+    >>> d = lua.decode(data)
+    >>> # 下面是伪代码
+    >>> d == lua.decode(lua.encode(d))
+
+    table 中花括号之外的内容会被自动删除：
+
+    >>> data = 'local data = {a = 1, b = {3, 4}} return data'
+    >>> print(lua.decode(data))
+    >>> {"a":1, {"b":[3,4]}}
 
     :param str text: lua字符串
     :return: python 对象
