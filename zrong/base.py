@@ -16,6 +16,7 @@ import os
 import shutil
 import logging
 import hashlib
+import ftplib
 from string import Template
 
 
@@ -49,7 +50,7 @@ class DictBase(dict):
     def __delattr__(self, name):
         del self[name]
 
-    def copyFromDict(self, adict, parent=None):
+    def copy_from_dict(self, adict, parent=None):
         """从一个已经存在的 dict 中复制所有的值。
 
         :param adict: 被复制的 dict。
@@ -84,17 +85,17 @@ class DictBase(dict):
             txt = txt.replace("]", "\n]")
         return txt
 
-    def saveToFile(self, path, human=True):
+    def save_to_file(self, path, human=True):
         """将自身内容保存到文件。
 
         :param str path: 保存的文件路径。
         :param bool human: 参见 :func:`dump()`
 
         """
-        writeFile(path, self.dump(human))
+        write_file(path, self.dump(human))
         slog.info("Save %a done.", path)
 
-    def readFromFile(self, path):
+    def read_from_file(self, path):
         """从一个文本文件中读入信息。
         假设该文本文件的格式与 :func:`dump()` 相同。
 
@@ -104,10 +105,14 @@ class DictBase(dict):
         if not os.path.exists(path):
             slog.warning("The file %s is not exist.", path)
             return False
-        txt = readFile(path)
+        txt = read_file(path)
         dic = eval(txt)
         self.copyFromDict(dic)
         return True
+
+    copyFromDict = copy_from_dict
+    saveToFile = save_to_file
+    readFromFile = read_from_file
 
 
 class ZrongError(Exception):
@@ -115,7 +120,7 @@ class ZrongError(Exception):
     pass
 
 
-def addLoggerHandler(log, handler=None, debug=None, fmt=None):
+def add_log_handler(log, handler=None, debug=None, fmt=None):
     """为一个 :class:`logging.Logger` 的实例增加 handler。
 
     :param Logger log: 需要处理的 :class:`logging.Logger` 的实例。
@@ -133,7 +138,7 @@ def addLoggerHandler(log, handler=None, debug=None, fmt=None):
             handler.setFormatter(fmt)
         log.addHandler(handler)
 
-def listDir(sourceDir, includeSource=None, includeFile=True):
+def list_dir(sourceDir, includeSource=None, includeFile=True):
     """与 :func:`os.listdir()` 类似，但提供一些筛选功能，且返回生成器对象。
 
     :param str sourceDir: 待处理的文件夹。
@@ -153,10 +158,10 @@ def listDir(sourceDir, includeSource=None, includeFile=True):
             else:
                 yield cur_file
 
-def copyDir(souDir, dstDir, delDst=False):
+def copy_dir(souDir, dstDir, delDst=False):
     """:func:`shutil.copytree()` 也能实现类似功能，
     但前者要求目标文件夹必须不存在。
-    而 copyDir 没有这个要求，它可以将 souDir 中的文件合并到 dstDir 中。
+    而 copy_dir 没有这个要求，它可以将 souDir 中的文件合并到 dstDir 中。
 
     :param str souDir: 待复制的文件夹；
     :param str dstDir: 目标文件夹；
@@ -166,16 +171,16 @@ def copyDir(souDir, dstDir, delDst=False):
     if delDst and os.path.isdir(delDst):
         shutil.rmtree(dstDir)
     os.makedirs(dstDir, exist_ok=True)
-    for cur_file in listDir(souDir):
+    for cur_file in list_dir(souDir):
         dst_file = os.path.join(dstDir, cur_file)
         cur_file = os.path.join(souDir, cur_file)
         if os.path.isdir(cur_file):
             os.makedirs(dst_file, exist_ok=True)
-            copyDir(cur_file, dst_file)
+            copy_dir(cur_file, dst_file)
         else:
             shutil.copyfile(cur_file, dst_file)
 
-def getFiles(path, ext=[], include=True):
+def get_files(path, ext=[], include=True):
     """遍历提供的文件夹的所有子文件夹，饭后生成器对象。
 
     :param str path: 待处理的文件夹。
@@ -200,7 +205,7 @@ def getFiles(path, ext=[], include=True):
             else:
                 yield os.path.join(p, f)
 
-def readFile(filePath):
+def read_file(filePath):
     """读取文本文件的内容。
 
     :param str filePath: 文件路径。
@@ -212,7 +217,7 @@ def readFile(filePath):
         txt = afile.read()
     return txt
 
-def writeFile(filePath, txt):
+def write_file(filePath, txt):
     """将文本内容写入文件。
 
     :param str filePath: 文件路径。
@@ -227,7 +232,7 @@ def writeFile(filePath, txt):
     with open(filePath, mode="w",encoding="utf-8") as afile:
         afile.write(txt)
 
-def writeByTempl(templ, target, subValue):
+def write_by_templ(templ, target, subValue):
     """根据模版写入文件。
 
     :param str templ: 模版文件所在路径。
@@ -235,10 +240,10 @@ def writeByTempl(templ, target, subValue):
     :param dict subValue: 被替换的内容。
 
     """
-    templ_txt = readFile(templ)
-    writeFile(target, Template(templ_txt).substitute(subValue))
+    templ_txt = read_file(templ)
+    write_file(target, Template(templ_txt).substitute(subValue))
 
-def getMD5(path):
+def get_md5(path):
     """获取文件的 MD5 值。
 
     :param str path: 文件路径。
@@ -251,3 +256,45 @@ def getMD5(path):
         md5obj.update(f.read())
         return md5obj.hexdigest()
     raise ZrongError("Error when get md5 for %s!"%path)
+
+def get_ftp(ftpConf, debug=0):
+    """得到一个 已经打开的FTP 实例，和一个 ftp 路径。
+
+    :param str ftpConf: ftp配置文件，格式如下：
+    
+        >>> {
+        >>>     'server':'127.0.0.1',
+        >>>     'start_path':None,
+        >>>     'user':'admin',
+        >>>     'password':'123456',
+        >>> }
+
+    :returns: ftp, ftpserverstr
+    :rtype: :class:`ftplib.FTP` , str
+
+    """
+    server = ftpConf.get('server')
+    user = ftpConf.get('user')
+    password = ftpConf.get('password')
+    start_path = ftpConf.get('start_path')
+    slog.info("Connecting FTP server %s ......", server)
+    ftpStr = 'ftp://%s/'%server
+    if start_path:
+        ftpStr = ftpStr+start_path
+    ftp = ftplib.FTP(server, user, password)
+    ftp.set_debuglevel(debug)
+    if start_path:
+        ftp.cwd(start_path)
+    serverFiles = ftp.nlst()
+    slog.info('There are some files in %s:\n[%s]'%(ftpStr, ', '.join(serverFiles)))
+    return ftp, ftpStr
+
+
+getMD5          = get_md5
+writeByTempl    = write_by_templ
+writeFile       = write_file
+listDir         = list_dir
+addLoggerHandler = add_log_handler
+copyDir         = copy_dir
+getFiles        = get_files
+readFile        = read_file

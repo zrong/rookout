@@ -15,7 +15,7 @@ import os
 import subprocess
 from .base import slog
 
-def getArgs(path, *args):
+def get_args(path, *args):
     """获取可被 subprogress 执行的 git 参数 list。
 
     :param str path: git 仓库文件夹路径。
@@ -30,7 +30,7 @@ def getArgs(path, *args):
         base.append(arg)
     return base
 
-def getHash(path, cut=0):
+def get_hash(path, cut=0):
     """获取可被 git 的 HEAD 的 sha1 值。
 
     :param str path: git 仓库文件夹路径。
@@ -39,14 +39,14 @@ def getHash(path, cut=0):
     :rtype: str
 
     """
-    arg = getArgs(path, 'rev-parse', 'HEAD')
+    arg = get_args(path, 'rev-parse', 'HEAD')
     # maybe the string is with a linebreak.
     sha1 = subprocess.check_output(arg, universal_newlines=True).strip()
     if cut > 0:
         sha1 = sha1[:7]
     return sha1
 
-def getCommitTimes(path):
+def get_commit_times(path):
     """获取提交次数。
 
     :param str path: git 仓库文件夹路径。
@@ -54,11 +54,11 @@ def getCommitTimes(path):
     :rtype: int
 
     """
-    arg = getArgs(path, "rev-list", '--all')
+    arg = get_args(path, "rev-list", '--all')
     output = subprocess.check_output(arg, universal_newlines=True)
     return output.count("\n")
 
-def updateSubmodules(path, init=True, update=True):
+def update_submodules(path, init=True, update=True):
     """更新子模块。
 
     :param str path: git 仓库文件夹路径。
@@ -68,14 +68,14 @@ def updateSubmodules(path, init=True, update=True):
     """
     succ = None
     if init:
-        arg = getArgs(path, 'submodule', 'init')
+        arg = get_args(path, 'submodule', 'init')
         slog.info(' '.join(arg))
         succ = subprocess.call(arg)
         if succ>0:
             slog.error('git execute error!')
             return succ
     if update:
-        arg = getArgs(path, "submodule", "update")
+        arg = get_args(path, "submodule", "update")
         slog.info(' '.join(arg))
         succ = subprocess.call(arg)
         if succ>0:

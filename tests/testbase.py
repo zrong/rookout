@@ -1,5 +1,6 @@
 import os
 import shutil
+import ftplib
 from zrong import base
 
 workDir = None
@@ -21,46 +22,55 @@ class TestDictBase:
     def test_dump(self):
         self._dict.dump()
 
-    def test_copyFromDict(self):
+    def test_copy_from_dict(self):
         nestedDict = dict(
                 a = 1,
                 b = {'bb':{'bbb':{'bbbb':2}}},
                 )
         newDict = base.DictBase()
-        newDict.copyFromDict(nestedDict)
+        newDict.copy_from_dict(nestedDict)
         assert newDict.a == 1 and newDict.b.bb.bbb.bbbb == 2
 
-    def test_saveToFile(self):
+    def test_save_to_file(self):
         fileName = "__TEST_DICT_BASE_WRITE_TO_FILE__.py"
         filePath =  os.path.join(workDir, fileName)
-        self._dict.saveToFile(filePath)
+        self._dict.save_to_file(filePath)
         os.remove(filePath)
 
 def setup():
     global workDir
     workDir = os.path.split(os.path.abspath(__file__))[0]
 
-def test_listDir():
-    assert len(list(base.listDir(workDir))) > 0
+def test_list_dir():
+    assert len(list(base.list_dir(workDir))) > 0
 
-def test_copyDir():
+def test_copy_dir():
     dirName = "__TEST_COPY_DIR__"
     dstPath = os.path.join(workDir, dirName)
     souPath = os.path.join(workDir, os.pardir, 'zrong')
-    base.copyDir(souPath, dstPath, True)
+    base.copy_dir(souPath, dstPath, True)
     shutil.rmtree(dstPath)
 
-def test_getFiles():
-    assert len(list(base.getFiles(workDir))) > 0
+def test_get_files():
+    assert len(list(base.get_files(workDir))) > 0
 
-def test_readFile():
-    base.readFile(__file__)
+def test_read_file():
+    base.read_file(__file__)
 
-def test_writeFile():
+def test_write_file():
     fileName = "__TEST_WRITE_FILE__.txt"
     filePath =  os.path.join(workDir, fileName)
-    base.writeFile(filePath, filePath)
+    base.write_file(filePath, filePath)
     os.remove(filePath)
 
-def test_getMD5():
-    assert len(base.getMD5(__file__)) == 32
+def test_get_md5():
+    assert len(base.get_md5(__file__)) == 32
+
+def test_get_ftp():
+    ftpobj = base.get_ftp({
+            'server':'127.0.0.1',
+            'user':'user',
+            'password':'password',
+        })[0]
+    print(ftpobj)
+    assert isinstance(ftpobj, ftplib.FTP)
