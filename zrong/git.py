@@ -30,6 +30,17 @@ def get_args(path, *args):
         base.append(arg)
     return base
 
+def clone(giturl, gitpath):
+    """clone 一个 git 库。
+
+    :param str giturl: git 仓库的 url 地址。
+    :param str gitpath: git 仓库保存路径。
+
+    """
+    gitArgs = ['git', 'clone', giturl, gitpath]
+    slog.info(' '.join(gitArgs))
+    return subprocess.call(gitArgs)
+
 def get_hash(path, cut=0):
     """获取可被 git 的 HEAD 的 sha1 值。
 

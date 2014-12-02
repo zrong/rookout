@@ -65,7 +65,7 @@ class DictBase(dict):
         for k,v in adict.items():
             if isinstance(v, dict):
                 vDict = DictBase(v)
-                self.copyFromDict(v, vDict)
+                self.copy_from_dict(v, vDict)
                 parent[k] = vDict
             else:
                 parent[k] = v
@@ -107,7 +107,7 @@ class DictBase(dict):
             return False
         txt = read_file(path)
         dic = eval(txt)
-        self.copyFromDict(dic)
+        self.copy_from_dict(dic)
         return True
 
     copyFromDict = copy_from_dict
@@ -232,7 +232,7 @@ def write_file(filePath, txt):
     with open(filePath, mode="w",encoding="utf-8") as afile:
         afile.write(txt)
 
-def write_by_templ(templ, target, subValue):
+def write_by_templ(templ, target, subValue, safe=False):
     """根据模版写入文件。
 
     :param str templ: 模版文件所在路径。
@@ -241,7 +241,12 @@ def write_by_templ(templ, target, subValue):
 
     """
     templ_txt = read_file(templ)
-    write_file(target, Template(templ_txt).substitute(subValue))
+    txt = None
+    if safe:
+        txt = Template(templ_txt).safe_substitute(subValue)
+    else:
+        txt = Template(templ_txt).substitute(subValue)
+    write_file(target, txt)
 
 def get_md5(path):
     """获取文件的 MD5 值。
