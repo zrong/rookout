@@ -13,3 +13,13 @@ def test_get_hash():
 
 def test_get_commit_times():
     assert git.get_commit_times('') > 0
+
+def test_isclean():
+    git.isclean(None)
+
+def test_get_branches():
+    assert git.get_branches(None)
+
+def test_call():
+    code, output = git.call(None, '--aabbccdd')
+    assert output

@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name = "zrong",
-    version = "0.2.3",
+    version = "0.2.4",
     description = "A python library by zrong",
     author = "zrong",
     author_email = "zrongzrong@gmail.com",
