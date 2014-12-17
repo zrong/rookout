@@ -91,7 +91,7 @@ def clone(giturl, gitpath):
     """
     gitArgs = ['git', 'clone', giturl, gitpath]
     slog.info(' '.join(gitArgs))
-    return subprocess.call(gitArgs)[1]
+    return subprocess.call(gitArgs)
 
 def get_hash(path, cut=0):
     """获取可被 git 的 HEAD 的 sha1 值。
