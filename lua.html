@@ -1,0 +1,196 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>zrong.lua module &mdash; A python library 0.2.3 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.2.3',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="A python library 0.2.3 documentation" href="index.html" />
+    <link rel="prev" title="zrong.git module" href="git.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="git.html" title="zrong.git module"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">A python library 0.2.3 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="module-zrong.lua">
+<span id="zrong-lua-module"></span><h1>zrong.lua module<a class="headerlink" href="#module-zrong.lua" title="Permalink to this headline">¶</a></h1>
+<span class="target" id="module-lua"></span><dl class="function">
+<dt id="zrong.lua.decode">
+<tt class="descclassname">zrong.lua.</tt><tt class="descname">decode</tt><big>(</big><em>text</em><big>)</big><a class="headerlink" href="#zrong.lua.decode" title="Permalink to this definition">¶</a></dt>
+<dd><p>将 lua 解析成 python 对象。
+text 可以是标准的 lua 字符串、或者直接是一个对象。</p>
+<p>下面的代码都能够通过测试：</p>
+<p>整数和浮点数：</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="k">assert</span> <span class="n">lua</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s">&#39;3&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="mi">3</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">assert</span> <span class="n">lua</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s">&#39;4.1&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="mf">4.1</span>
+</pre></div>
+</div>
+<p>负浮点数：</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="k">assert</span> <span class="n">lua</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s">&#39;-0.45&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="o">-</span><span class="mf">0.45</span>
+</pre></div>
+</div>
+<p>科学计数法：</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="k">assert</span> <span class="n">lua</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s">&#39;3e-7&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="mf">3e-7</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">assert</span> <span class="n">lua</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s">&#39;-3.23e+17&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="o">-</span><span class="mf">3.23e+17</span>
+</pre></div>
+</div>
+<p>十六进制：</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="k">assert</span> <span class="n">lua</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s">&#39;0x3a&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="mh">0x3a</span>
+</pre></div>
+</div>
+<p>字符串转义：</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="k">assert</span> <span class="n">lua</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s">r&quot;&#39;test&#39;s string&#39;&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="s">&quot;test&#39;s string&quot;</span>
+</pre></div>
+</div>
+<p>table：</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">data</span> <span class="o">=</span> <span class="s">&#39;{ array = { 65, 23, 5 }, dict = { string = &quot;value&quot;, array = { 3, 6, 4}, mixed = { 43, 54.3, false, string = &quot;value&quot;, 9 } } }&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">d</span> <span class="o">=</span> <span class="n">lua</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c"># 下面是伪代码</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">d</span> <span class="o">==</span> <span class="n">lua</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="n">lua</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="n">d</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>table 中花括号之外的内容会被自动删除：</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">data</span> <span class="o">=</span> <span class="s">&#39;local data = {a = 1, b = {3, 4}} return data&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span><span class="p">(</span><span class="n">lua</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="n">data</span><span class="p">))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="p">{</span><span class="s">&quot;a&quot;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span> <span class="p">{</span><span class="s">&quot;b&quot;</span><span class="p">:[</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">]}}</span>
+</pre></div>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>text</strong> (<em>str</em>) &#8211; lua字符串</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">python 对象</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Raise:</th><td class="field-body"><a class="reference internal" href="base.html#zrong.base.ZrongError" title="zrong.base.ZrongError"><tt class="xref py py-class docutils literal"><span class="pre">zrong.base.ZrongError</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="zrong.lua.decode_file">
+<tt class="descclassname">zrong.lua.</tt><tt class="descname">decode_file</tt><big>(</big><em>luafile</em><big>)</big><a class="headerlink" href="#zrong.lua.decode_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>将 lua文件 解析成 python 对象。
+将 luafile 解析成字符串，然后调用 <a class="reference internal" href="#zrong.lua.decode" title="zrong.lua.decode"><tt class="xref py py-func docutils literal"><span class="pre">zrong.lua.decode()</span></tt></a> 。</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>luafile</strong> (<em>str</em>) &#8211; lua文件路径。</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">python 对象</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Raise:</th><td class="field-body"><a class="reference internal" href="base.html#zrong.base.ZrongError" title="zrong.base.ZrongError"><tt class="xref py py-class docutils literal"><span class="pre">zrong.base.ZrongError</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="zrong.lua.encode">
+<tt class="descclassname">zrong.lua.</tt><tt class="descname">encode</tt><big>(</big><em>obj</em><big>)</big><a class="headerlink" href="#zrong.lua.encode" title="Permalink to this definition">¶</a></dt>
+<dd><p>将 python 对象解析成 lua 字符串。</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>obj</strong> (<em>object</em>) &#8211; 一个 python 对象。</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">一个 lua 格式的字符串。</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="git.html"
+                        title="previous chapter">zrong.git module</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/lua.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="git.html" title="zrong.git module"
+             >previous</a> |</li>
+        <li><a href="index.html">A python library 0.2.3 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, zrong.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.3.
+    </div>
+  </body>
+</html>

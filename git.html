@@ -1,0 +1,274 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>zrong.git module &mdash; A python library 0.2.3 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.2.3',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="A python library 0.2.3 documentation" href="index.html" />
+    <link rel="next" title="zrong.lua module" href="lua.html" />
+    <link rel="prev" title="zrong.base module" href="base.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="lua.html" title="zrong.lua module"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="base.html" title="zrong.base module"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">A python library 0.2.3 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="module-zrong.git">
+<span id="zrong-git-module"></span><h1>zrong.git module<a class="headerlink" href="#module-zrong.git" title="Permalink to this headline">¶</a></h1>
+<span class="target" id="module-git"></span><dl class="function">
+<dt id="zrong.git.call">
+<tt class="descclassname">zrong.git.</tt><tt class="descname">call</tt><big>(</big><em>path</em>, <em>*args</em><big>)</big><a class="headerlink" href="#zrong.git.call" title="Permalink to this definition">¶</a></dt>
+<dd><p>使用 subprocess.check_output 调用 git 命令。</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>path</strong> (<em>str</em>) &#8211; git 仓库文件夹路径。</li>
+<li><strong>*args</strong> &#8211; git 的附加参数。</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">错误代码和调用结果。</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first">int</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">string git 返回的信息，若执行出错则为错误信息。</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="zrong.git.clone">
+<tt class="descclassname">zrong.git.</tt><tt class="descname">clone</tt><big>(</big><em>giturl</em>, <em>gitpath</em><big>)</big><a class="headerlink" href="#zrong.git.clone" title="Permalink to this definition">¶</a></dt>
+<dd><p>clone 一个 git 库。</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>giturl</strong> (<em>str</em>) &#8211; git 仓库的 url 地址。</li>
+<li><strong>gitpath</strong> (<em>str</em>) &#8211; git 仓库保存路径。</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="zrong.git.get_args">
+<tt class="descclassname">zrong.git.</tt><tt class="descname">get_args</tt><big>(</big><em>path</em>, <em>*args</em><big>)</big><a class="headerlink" href="#zrong.git.get_args" title="Permalink to this definition">¶</a></dt>
+<dd><p>获取可被 subprogress 执行的 git 参数 list。</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>path</strong> (<em>str</em>) &#8211; git 仓库文件夹路径。</li>
+<li><strong>*args</strong> &#8211; git 的附加参数。</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="zrong.git.get_branches">
+<tt class="descclassname">zrong.git.</tt><tt class="descname">get_branches</tt><big>(</big><em>path</em><big>)</big><a class="headerlink" href="#zrong.git.get_branches" title="Permalink to this definition">¶</a></dt>
+<dd><p>获取当前所有分支名称的列表。</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>path</strong> (<em>str</em>) &#8211; git 仓库文件夹路径。</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">分支名称列表。当前分支位于列表第一项。</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">list</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="zrong.git.get_commit_times">
+<tt class="descclassname">zrong.git.</tt><tt class="descname">get_commit_times</tt><big>(</big><em>path</em><big>)</big><a class="headerlink" href="#zrong.git.get_commit_times" title="Permalink to this definition">¶</a></dt>
+<dd><p>获取提交次数。</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>path</strong> (<em>str</em>) &#8211; git 仓库文件夹路径。</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">包含所有分支的提交次数。</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">int</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="zrong.git.get_hash">
+<tt class="descclassname">zrong.git.</tt><tt class="descname">get_hash</tt><big>(</big><em>path</em>, <em>cut=0</em><big>)</big><a class="headerlink" href="#zrong.git.get_hash" title="Permalink to this definition">¶</a></dt>
+<dd><p>获取可被 git 的 HEAD 的 sha1 值。</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>path</strong> (<em>str</em>) &#8211; git 仓库文件夹路径。</li>
+<li><strong>cut</strong> (<em>int</em>) &#8211; 包含的 sha1 值的长度。0代表不剪切。</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">剪切过的 sha1 的值。</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">str</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="zrong.git.isclean">
+<tt class="descclassname">zrong.git.</tt><tt class="descname">isclean</tt><big>(</big><em>path</em><big>)</big><a class="headerlink" href="#zrong.git.isclean" title="Permalink to this definition">¶</a></dt>
+<dd><p>检查版本库是否是干净的。</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>path</strong> (<em>str</em>) &#8211; git 仓库文件夹路径。</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">boolean</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="zrong.git.update_submodules">
+<tt class="descclassname">zrong.git.</tt><tt class="descname">update_submodules</tt><big>(</big><em>path</em>, <em>init=True</em>, <em>update=True</em><big>)</big><a class="headerlink" href="#zrong.git.update_submodules" title="Permalink to this definition">¶</a></dt>
+<dd><p>更新子模块。</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>path</strong> (<em>str</em>) &#8211; git 仓库文件夹路径。</li>
+<li><strong>init</strong> (<em>bool</em>) &#8211; 是否初始化子模块。</li>
+<li><strong>update</strong> (<em>bool</em>) &#8211; 是否更新子模块。</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="base.html"
+                        title="previous chapter">zrong.base module</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="lua.html"
+                        title="next chapter">zrong.lua module</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/git.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="lua.html" title="zrong.lua module"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="base.html" title="zrong.base module"
+             >previous</a> |</li>
+        <li><a href="index.html">A python library 0.2.3 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, zrong.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.3.
+    </div>
+  </body>
+</html>

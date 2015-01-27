@@ -1,0 +1,607 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>zrong.base module &mdash; A python library 0.2.3 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.2.3',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="A python library 0.2.3 documentation" href="index.html" />
+    <link rel="next" title="zrong.git module" href="git.html" />
+    <link rel="prev" title="Welcome to zrong’s documentation!" href="index.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="git.html" title="zrong.git module"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Welcome to zrong’s documentation!"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">A python library 0.2.3 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="module-zrong.base">
+<span id="zrong-base-module"></span><h1>zrong.base module<a class="headerlink" href="#module-zrong.base" title="Permalink to this headline">¶</a></h1>
+<span class="target" id="module-base"></span><dl class="class">
+<dt id="zrong.base.DictBase">
+<em class="property">class </em><tt class="descclassname">zrong.base.</tt><tt class="descname">DictBase</tt><a class="headerlink" href="#zrong.base.DictBase" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <tt class="xref py py-class docutils literal"><span class="pre">builtins.dict</span></tt></p>
+<p>作为配置文件的基类。</p>
+<p>dict 默认不适合当作配置文件对象使用。如要有下面几点不便：</p>
+<ol class="arabic simple">
+<li>对于不存在的 key，会 raise KeyError 错误；</li>
+<li>dict不能使用 <tt class="docutils literal"><span class="pre">.</span></tt> 语法访问。</li>
+</ol>
+<p><tt class="xref py py-class docutils literal"><span class="pre">DictBase</span></tt> 解决了这些问题，还另外提供了一些方法在使用上更加方便。</p>
+<dl class="method">
+<dt id="zrong.base.DictBase.copyFromDict">
+<tt class="descname">copyFromDict</tt><big>(</big><em>adict</em>, <em>parent=None</em><big>)</big><a class="headerlink" href="#zrong.base.DictBase.copyFromDict" title="Permalink to this definition">¶</a></dt>
+<dd><p>从一个已经存在的 dict 中复制所有的值。</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>adict</strong> (<em>dict</em>) &#8211; 被复制的 dict。</li>
+<li><strong>parent</strong> (<em>DictBase</em>) &#8211; 复制到哪个父对象。
+若为 None 则复制到 self 。</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="zrong.base.DictBase.copy_from_dict">
+<tt class="descname">copy_from_dict</tt><big>(</big><em>adict</em>, <em>parent=None</em><big>)</big><a class="headerlink" href="#zrong.base.DictBase.copy_from_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>从一个已经存在的 dict 中复制所有的值。</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>adict</strong> (<em>dict</em>) &#8211; 被复制的 dict。</li>
+<li><strong>parent</strong> (<em>DictBase</em>) &#8211; 复制到哪个父对象。
+若为 None 则复制到 self 。</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="zrong.base.DictBase.dump">
+<tt class="descname">dump</tt><big>(</big><em>human=False</em><big>)</big><a class="headerlink" href="#zrong.base.DictBase.dump" title="Permalink to this definition">¶</a></dt>
+<dd><p>将自身内容打印成字符串</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>human</strong> (<em>bool</em>) &#8211; 若值为 True ，则打印成易读格式。</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="zrong.base.DictBase.readFromFile">
+<tt class="descname">readFromFile</tt><big>(</big><em>path</em><big>)</big><a class="headerlink" href="#zrong.base.DictBase.readFromFile" title="Permalink to this definition">¶</a></dt>
+<dd><p>从一个文本文件中读入信息。
+假设该文本文件的格式与 <tt class="xref py py-func docutils literal"><span class="pre">dump()</span></tt> 相同。</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>path</strong> (<em>str</em>) &#8211; 待读入的文件路径。</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="zrong.base.DictBase.read_from_file">
+<tt class="descname">read_from_file</tt><big>(</big><em>path</em><big>)</big><a class="headerlink" href="#zrong.base.DictBase.read_from_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>从一个文本文件中读入信息。
+假设该文本文件的格式与 <tt class="xref py py-func docutils literal"><span class="pre">dump()</span></tt> 相同。</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>path</strong> (<em>str</em>) &#8211; 待读入的文件路径。</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="zrong.base.DictBase.saveToFile">
+<tt class="descname">saveToFile</tt><big>(</big><em>path</em>, <em>human=True</em><big>)</big><a class="headerlink" href="#zrong.base.DictBase.saveToFile" title="Permalink to this definition">¶</a></dt>
+<dd><p>将自身内容保存到文件。</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>path</strong> (<em>str</em>) &#8211; 保存的文件路径。</li>
+<li><strong>human</strong> (<em>bool</em>) &#8211; 参见 <tt class="xref py py-func docutils literal"><span class="pre">dump()</span></tt></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="zrong.base.DictBase.save_to_file">
+<tt class="descname">save_to_file</tt><big>(</big><em>path</em>, <em>human=True</em><big>)</big><a class="headerlink" href="#zrong.base.DictBase.save_to_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>将自身内容保存到文件。</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>path</strong> (<em>str</em>) &#8211; 保存的文件路径。</li>
+<li><strong>human</strong> (<em>bool</em>) &#8211; 参见 <tt class="xref py py-func docutils literal"><span class="pre">dump()</span></tt></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="exception">
+<dt id="zrong.base.ZrongError">
+<em class="property">exception </em><tt class="descclassname">zrong.base.</tt><tt class="descname">ZrongError</tt><a class="headerlink" href="#zrong.base.ZrongError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <tt class="xref py py-class docutils literal"><span class="pre">builtins.Exception</span></tt></p>
+<p>zrong 模块使用的异常类。</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="zrong.base.addLoggerHandler">
+<tt class="descclassname">zrong.base.</tt><tt class="descname">addLoggerHandler</tt><big>(</big><em>log</em>, <em>handler=None</em>, <em>debug=None</em>, <em>fmt=None</em><big>)</big><a class="headerlink" href="#zrong.base.addLoggerHandler" title="Permalink to this definition">¶</a></dt>
+<dd><p>为一个 <tt class="xref py py-class docutils literal"><span class="pre">logging.Logger</span></tt> 的实例增加 handler。</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>log</strong> (<em>Logger</em>) &#8211; 需要处理的 <tt class="xref py py-class docutils literal"><span class="pre">logging.Logger</span></tt> 的实例。</li>
+<li><strong>handler</strong> (<em>Handler</em>) &#8211; 一个 <tt class="xref py py-class docutils literal"><span class="pre">logging.Handler</span></tt> 的实例。</li>
+<li><strong>debug</strong> (<em>int</em>) &#8211; Debug 级别。</li>
+<li><strong>fmt</strong> (<em>str</em>) &#8211; Handler 的 Formatter。</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="zrong.base.add_log_handler">
+<tt class="descclassname">zrong.base.</tt><tt class="descname">add_log_handler</tt><big>(</big><em>log</em>, <em>handler=None</em>, <em>debug=None</em>, <em>fmt=None</em><big>)</big><a class="headerlink" href="#zrong.base.add_log_handler" title="Permalink to this definition">¶</a></dt>
+<dd><p>为一个 <tt class="xref py py-class docutils literal"><span class="pre">logging.Logger</span></tt> 的实例增加 handler。</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>log</strong> (<em>Logger</em>) &#8211; 需要处理的 <tt class="xref py py-class docutils literal"><span class="pre">logging.Logger</span></tt> 的实例。</li>
+<li><strong>handler</strong> (<em>Handler</em>) &#8211; 一个 <tt class="xref py py-class docutils literal"><span class="pre">logging.Handler</span></tt> 的实例。</li>
+<li><strong>debug</strong> (<em>int</em>) &#8211; Debug 级别。</li>
+<li><strong>fmt</strong> (<em>str</em>) &#8211; Handler 的 Formatter。</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="zrong.base.copyDir">
+<tt class="descclassname">zrong.base.</tt><tt class="descname">copyDir</tt><big>(</big><em>souDir</em>, <em>dstDir</em>, <em>delDst=False</em><big>)</big><a class="headerlink" href="#zrong.base.copyDir" title="Permalink to this definition">¶</a></dt>
+<dd><p><tt class="xref py py-func docutils literal"><span class="pre">shutil.copytree()</span></tt> 也能实现类似功能，
+但前者要求目标文件夹必须不存在。
+而 copy_dir 没有这个要求，它可以将 souDir 中的文件合并到 dstDir 中。</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>souDir</strong> (<em>str</em>) &#8211; 待复制的文件夹；</li>
+<li><strong>dstDir</strong> (<em>str</em>) &#8211; 目标文件夹；</li>
+<li><strong>delDst</strong> (<em>bool</em>) &#8211; 是否删除目标文件夹。</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="zrong.base.copy_dir">
+<tt class="descclassname">zrong.base.</tt><tt class="descname">copy_dir</tt><big>(</big><em>souDir</em>, <em>dstDir</em>, <em>delDst=False</em><big>)</big><a class="headerlink" href="#zrong.base.copy_dir" title="Permalink to this definition">¶</a></dt>
+<dd><p><tt class="xref py py-func docutils literal"><span class="pre">shutil.copytree()</span></tt> 也能实现类似功能，
+但前者要求目标文件夹必须不存在。
+而 copy_dir 没有这个要求，它可以将 souDir 中的文件合并到 dstDir 中。</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>souDir</strong> (<em>str</em>) &#8211; 待复制的文件夹；</li>
+<li><strong>dstDir</strong> (<em>str</em>) &#8211; 目标文件夹；</li>
+<li><strong>delDst</strong> (<em>bool</em>) &#8211; 是否删除目标文件夹。</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="zrong.base.getFiles">
+<tt class="descclassname">zrong.base.</tt><tt class="descname">getFiles</tt><big>(</big><em>path</em>, <em>ext=[]</em>, <em>include=True</em><big>)</big><a class="headerlink" href="#zrong.base.getFiles" title="Permalink to this definition">¶</a></dt>
+<dd><p>遍历提供的文件夹的所有子文件夹，饭后生成器对象。</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>path</strong> (<em>str</em>) &#8211; 待处理的文件夹。</li>
+<li><strong>ext</strong> (<em>list</em>) &#8211; 扩展名列表。</li>
+<li><strong>include</strong> (<em>bool</em>) &#8211; 若值为 True，代表 ext 提供的是包含列表；
+否则是排除列表。</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">一个生成器对象。</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="zrong.base.getMD5">
+<tt class="descclassname">zrong.base.</tt><tt class="descname">getMD5</tt><big>(</big><em>path</em><big>)</big><a class="headerlink" href="#zrong.base.getMD5" title="Permalink to this definition">¶</a></dt>
+<dd><p>获取文件的 MD5 值。</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>path</strong> (<em>str</em>) &#8211; 文件路径。</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">MD5 值。</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">str</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="zrong.base.get_files">
+<tt class="descclassname">zrong.base.</tt><tt class="descname">get_files</tt><big>(</big><em>path</em>, <em>ext=[]</em>, <em>include=True</em><big>)</big><a class="headerlink" href="#zrong.base.get_files" title="Permalink to this definition">¶</a></dt>
+<dd><p>遍历提供的文件夹的所有子文件夹，饭后生成器对象。</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>path</strong> (<em>str</em>) &#8211; 待处理的文件夹。</li>
+<li><strong>ext</strong> (<em>list</em>) &#8211; 扩展名列表。</li>
+<li><strong>include</strong> (<em>bool</em>) &#8211; 若值为 True，代表 ext 提供的是包含列表；
+否则是排除列表。</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">一个生成器对象。</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="zrong.base.get_ftp">
+<tt class="descclassname">zrong.base.</tt><tt class="descname">get_ftp</tt><big>(</big><em>ftpConf</em>, <em>debug=0</em><big>)</big><a class="headerlink" href="#zrong.base.get_ftp" title="Permalink to this definition">¶</a></dt>
+<dd><p>得到一个 已经打开的FTP 实例，和一个 ftp 路径。</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>ftpConf</strong> (<em>str</em>) &#8211; <p>ftp配置文件，格式如下：</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="p">{</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="s">&#39;server&#39;</span><span class="p">:</span><span class="s">&#39;127.0.0.1&#39;</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="s">&#39;start_path&#39;</span><span class="p">:</span><span class="bp">None</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="s">&#39;user&#39;</span><span class="p">:</span><span class="s">&#39;admin&#39;</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="s">&#39;password&#39;</span><span class="p">:</span><span class="s">&#39;123456&#39;</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="p">}</span>
+</pre></div>
+</div>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">ftp, ftpserverstr</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">ftplib.FTP</span></tt> , str</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="zrong.base.get_md5">
+<tt class="descclassname">zrong.base.</tt><tt class="descname">get_md5</tt><big>(</big><em>path</em><big>)</big><a class="headerlink" href="#zrong.base.get_md5" title="Permalink to this definition">¶</a></dt>
+<dd><p>获取文件的 MD5 值。</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>path</strong> (<em>str</em>) &#8211; 文件路径。</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">MD5 值。</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">str</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="zrong.base.listDir">
+<tt class="descclassname">zrong.base.</tt><tt class="descname">listDir</tt><big>(</big><em>sourceDir</em>, <em>includeSource=None</em>, <em>includeFile=True</em><big>)</big><a class="headerlink" href="#zrong.base.listDir" title="Permalink to this definition">¶</a></dt>
+<dd><p>与 <tt class="xref py py-func docutils literal"><span class="pre">os.listdir()</span></tt> 类似，但提供一些筛选功能，且返回生成器对象。</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>sourceDir</strong> (<em>str</em>) &#8211; 待处理的文件夹。</li>
+<li><strong>includeSource</strong> (<em>bool</em>) &#8211; 遍历结果中是否包含源文件夹的路径。</li>
+<li><strong>includeFile</strong> (<em>bool</em>) &#8211; 是否包含文件。True 表示返回的内容中既包含文件，又
+包含文件夹；Flase 代表仅包含文件夹。</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">一个生成器对象。</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="zrong.base.list_dir">
+<tt class="descclassname">zrong.base.</tt><tt class="descname">list_dir</tt><big>(</big><em>sourceDir</em>, <em>includeSource=None</em>, <em>includeFile=True</em><big>)</big><a class="headerlink" href="#zrong.base.list_dir" title="Permalink to this definition">¶</a></dt>
+<dd><p>与 <tt class="xref py py-func docutils literal"><span class="pre">os.listdir()</span></tt> 类似，但提供一些筛选功能，且返回生成器对象。</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>sourceDir</strong> (<em>str</em>) &#8211; 待处理的文件夹。</li>
+<li><strong>includeSource</strong> (<em>bool</em>) &#8211; 遍历结果中是否包含源文件夹的路径。</li>
+<li><strong>includeFile</strong> (<em>bool</em>) &#8211; 是否包含文件。True 表示返回的内容中既包含文件，又
+包含文件夹；Flase 代表仅包含文件夹。</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">一个生成器对象。</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="zrong.base.readFile">
+<tt class="descclassname">zrong.base.</tt><tt class="descname">readFile</tt><big>(</big><em>filePath</em><big>)</big><a class="headerlink" href="#zrong.base.readFile" title="Permalink to this definition">¶</a></dt>
+<dd><p>读取文本文件的内容。</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>filePath</strong> (<em>str</em>) &#8211; 文件路径。</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">文件内容。</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">str</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="zrong.base.read_file">
+<tt class="descclassname">zrong.base.</tt><tt class="descname">read_file</tt><big>(</big><em>filePath</em><big>)</big><a class="headerlink" href="#zrong.base.read_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>读取文本文件的内容。</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>filePath</strong> (<em>str</em>) &#8211; 文件路径。</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">文件内容。</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">str</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="data">
+<dt id="zrong.base.slog">
+<tt class="descclassname">zrong.base.</tt><tt class="descname">slog</tt><em class="property"> = &lt;logging.Logger object at 0x1060de128&gt;</em><a class="headerlink" href="#zrong.base.slog" title="Permalink to this definition">¶</a></dt>
+<dd><p>默认的系统 log。</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="zrong.base.writeByTempl">
+<tt class="descclassname">zrong.base.</tt><tt class="descname">writeByTempl</tt><big>(</big><em>templ</em>, <em>target</em>, <em>subValue</em>, <em>safe=False</em><big>)</big><a class="headerlink" href="#zrong.base.writeByTempl" title="Permalink to this definition">¶</a></dt>
+<dd><p>根据模版写入文件。</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>templ</strong> (<em>str</em>) &#8211; 模版文件所在路径。</li>
+<li><strong>target</strong> (<em>str</em>) &#8211; 要写入的文件所在路径。</li>
+<li><strong>subValue</strong> (<em>dict</em>) &#8211; 被替换的内容。</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="zrong.base.writeFile">
+<tt class="descclassname">zrong.base.</tt><tt class="descname">writeFile</tt><big>(</big><em>filePath</em>, <em>txt</em><big>)</big><a class="headerlink" href="#zrong.base.writeFile" title="Permalink to this definition">¶</a></dt>
+<dd><p>将文本内容写入文件。</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>filePath</strong> (<em>str</em>) &#8211; 文件路径。</li>
+<li><strong>txt</strong> (<em>str</em>) &#8211; 待写入的文件内容。</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="zrong.base.write_by_templ">
+<tt class="descclassname">zrong.base.</tt><tt class="descname">write_by_templ</tt><big>(</big><em>templ</em>, <em>target</em>, <em>subValue</em>, <em>safe=False</em><big>)</big><a class="headerlink" href="#zrong.base.write_by_templ" title="Permalink to this definition">¶</a></dt>
+<dd><p>根据模版写入文件。</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>templ</strong> (<em>str</em>) &#8211; 模版文件所在路径。</li>
+<li><strong>target</strong> (<em>str</em>) &#8211; 要写入的文件所在路径。</li>
+<li><strong>subValue</strong> (<em>dict</em>) &#8211; 被替换的内容。</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="zrong.base.write_file">
+<tt class="descclassname">zrong.base.</tt><tt class="descname">write_file</tt><big>(</big><em>filePath</em>, <em>txt</em><big>)</big><a class="headerlink" href="#zrong.base.write_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>将文本内容写入文件。</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>filePath</strong> (<em>str</em>) &#8211; 文件路径。</li>
+<li><strong>txt</strong> (<em>str</em>) &#8211; 待写入的文件内容。</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="index.html"
+                        title="previous chapter">Welcome to zrong&#8217;s documentation!</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="git.html"
+                        title="next chapter">zrong.git module</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/base.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="git.html" title="zrong.git module"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Welcome to zrong’s documentation!"
+             >previous</a> |</li>
+        <li><a href="index.html">A python library 0.2.3 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, zrong.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.3.
+    </div>
+  </body>
+</html>
