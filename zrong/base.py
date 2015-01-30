@@ -1,7 +1,7 @@
 # base.py
 # Author zrong
 # Creation 2014-09-23
-# Last Editing 2014-11-02
+# Last Editing 2015-01-30
 
 """
 .. module:: base
@@ -138,12 +138,12 @@ def add_log_handler(log, handler=None, debug=None, fmt=None):
             handler.setFormatter(fmt)
         log.addHandler(handler)
 
-def list_dir(sourceDir, includeSource=None, includeFile=True):
+def list_dir(sourceDir, include_source=None, include_file=True):
     """与 :func:`os.listdir()` 类似，但提供一些筛选功能，且返回生成器对象。
 
     :param str sourceDir: 待处理的文件夹。
-    :param bool includeSource: 遍历结果中是否包含源文件夹的路径。
-    :param bool includeFile:    是否包含文件。True 表示返回的内容中既包含文件，又
+    :param bool include_source: 遍历结果中是否包含源文件夹的路径。
+    :param bool include_file:    是否包含文件。True 表示返回的内容中既包含文件，又
                                 包含文件夹；Flase 代表仅包含文件夹。
     :return: 一个生成器对象。
 
@@ -152,29 +152,32 @@ def list_dir(sourceDir, includeSource=None, includeFile=True):
         if cur_file.lower() == ".ds_store":
             continue
         pathWithSource = os.path.join(sourceDir, cur_file)
-        if includeFile or os.path.isdir(pathWithSource):
-            if includeSource:
+        if include_file or os.path.isdir(pathWithSource):
+            if include_source:
                 yield pathWithSource
             else:
                 yield cur_file
 
-def copy_dir(souDir, dstDir, delDst=False):
+def copy_dir(sou_dir, dst_dir, del_dst=False, del_subdst=False):
     """:func:`shutil.copytree()` 也能实现类似功能，
     但前者要求目标文件夹必须不存在。
-    而 copy_dir 没有这个要求，它可以将 souDir 中的文件合并到 dstDir 中。
+    而 copy_dir 没有这个要求，它可以将 sou_dir 中的文件合并到 dst_dir 中。
 
-    :param str souDir: 待复制的文件夹；
-    :param str dstDir: 目标文件夹；
-    :param bool delDst: 是否删除目标文件夹。
+    :param str sou_dir: 待复制的文件夹；
+    :param str dst_dir: 目标文件夹；
+    :param bool del_dst: 是否删除目标文件夹。
+    :param bool del_subdst: 是否删除目标子文件夹。
 
     """
-    if delDst and os.path.isdir(delDst):
-        shutil.rmtree(dstDir)
-    os.makedirs(dstDir, exist_ok=True)
-    for cur_file in list_dir(souDir):
-        dst_file = os.path.join(dstDir, cur_file)
-        cur_file = os.path.join(souDir, cur_file)
+    if del_dst and os.path.isdir(del_dst):
+        shutil.rmtree(dst_dir)
+    os.makedirs(dst_dir, exist_ok=True)
+    for cur_file in list_dir(sou_dir):
+        dst_file = os.path.join(dst_dir, cur_file)
+        cur_file = os.path.join(sou_dir, cur_file)
         if os.path.isdir(cur_file):
+            if del_subdst and os.path.isdir(dst_file):
+                shutil.rmtree(dst_file)
             os.makedirs(dst_file, exist_ok=True)
             copy_dir(cur_file, dst_file)
         else:
@@ -205,47 +208,47 @@ def get_files(path, ext=[], include=True):
             else:
                 yield os.path.join(p, f)
 
-def read_file(filePath):
+def read_file(file_path):
     """读取文本文件的内容。
 
-    :param str filePath: 文件路径。
+    :param str file_path: 文件路径。
     :returns: 文件内容。
     :rtype: str
 
     """
-    with open(filePath, mode="r",encoding="utf-8") as afile:
+    with open(file_path, mode="r",encoding="utf-8") as afile:
         txt = afile.read()
     return txt
 
-def write_file(filePath, txt):
+def write_file(file_path, txt):
     """将文本内容写入文件。
 
-    :param str filePath: 文件路径。
+    :param str file_path: 文件路径。
     :param str txt: 待写入的文件内容。
 
     """
-    if not os.path.exists(filePath):
-        upDir = os.path.dirname(filePath)
+    if not os.path.exists(file_path):
+        upDir = os.path.dirname(file_path)
         if not os.path.isdir(upDir):
             os.makedirs(upDir)
 
-    with open(filePath, mode="w",encoding="utf-8") as afile:
+    with open(file_path, mode="w",encoding="utf-8") as afile:
         afile.write(txt)
 
-def write_by_templ(templ, target, subValue, safe=False):
+def write_by_templ(templ, target, sub_value, safe=False):
     """根据模版写入文件。
 
     :param str templ: 模版文件所在路径。
     :param str target: 要写入的文件所在路径。
-    :param dict subValue: 被替换的内容。
+    :param dict sub_value: 被替换的内容。
 
     """
     templ_txt = read_file(templ)
     txt = None
     if safe:
-        txt = Template(templ_txt).safe_substitute(subValue)
+        txt = Template(templ_txt).safe_substitute(sub_value)
     else:
-        txt = Template(templ_txt).substitute(subValue)
+        txt = Template(templ_txt).substitute(sub_value)
     write_file(target, txt)
 
 def get_md5(path):
@@ -262,10 +265,10 @@ def get_md5(path):
         return md5obj.hexdigest()
     raise ZrongError("Error when get md5 for %s!"%path)
 
-def get_ftp(ftpConf, debug=0):
+def get_ftp(ftp_conf, debug=0):
     """得到一个 已经打开的FTP 实例，和一个 ftp 路径。
 
-    :param str ftpConf: ftp配置文件，格式如下：
+    :param str ftp_conf: ftp配置文件，格式如下：
     
         >>> {
         >>>     'server':'127.0.0.1',
@@ -278,10 +281,10 @@ def get_ftp(ftpConf, debug=0):
     :rtype: :class:`ftplib.FTP` , str
 
     """
-    server = ftpConf.get('server')
-    user = ftpConf.get('user')
-    password = ftpConf.get('password')
-    start_path = ftpConf.get('start_path')
+    server = ftp_conf.get('server')
+    user = ftp_conf.get('user')
+    password = ftp_conf.get('password')
+    start_path = ftp_conf.get('start_path')
     slog.info("Connecting FTP server %s ......", server)
     ftpStr = 'ftp://%s/'%server
     if start_path:
