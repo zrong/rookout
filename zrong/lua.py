@@ -9,7 +9,7 @@
 
 """
 import re
-from zrong.base import ZrongError, readFile, slog
+from zrong.base import read_file
 
 ERRORS = {
     'unexp_table': u'Unexpected structure while parsing Lua string.',
@@ -275,7 +275,7 @@ def decode_file(luafile):
     :raise: :class:`zrong.base.ZrongError`
 
     """
-    luastr = readFile(luafile)
+    luastr = read_file(luafile)
     return decode(luastr)
 
 def decode(text):

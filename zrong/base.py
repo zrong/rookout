@@ -1,7 +1,10 @@
+#########################################
 # base.py
+#
 # Author zrong
 # Creation 2014-09-23
 # Last Editing 2015-01-30
+#########################################
 
 """
 .. module:: base
@@ -13,17 +16,14 @@
 """
 
 import os
+import re
+import sys
+import zipfile
 import shutil
-import logging
 import hashlib
-import ftplib
+import tempfile
 from string import Template
-
-
-slog = logging.getLogger("system")
-"""默认的系统 log。"""
-
-__LOG_FMT = logging.Formatter("%(asctime)s %(levelname)-8s %(message)s\n")
+from zrong import slog
 
 
 class DictBase(dict):
@@ -114,29 +114,6 @@ class DictBase(dict):
     saveToFile = save_to_file
     readFromFile = read_from_file
 
-
-class ZrongError(Exception):
-    """zrong 模块使用的异常类。"""
-    pass
-
-
-def add_log_handler(log, handler=None, debug=None, fmt=None):
-    """为一个 :class:`logging.Logger` 的实例增加 handler。
-
-    :param Logger log: 需要处理的 :class:`logging.Logger` 的实例。
-    :param Handler handler: 一个 :class:`logging.Handler` 的实例。
-    :param int debug: Debug 级别。
-    :param str fmt: Handler 的 Formatter。
-
-    """
-    if debug:
-        log.setLevel(debug)
-    if handler:
-        # if not fmt:
-        #     fmt = __LOG_FMT
-        if fmt:
-            handler.setFormatter(fmt)
-        log.addHandler(handler)
 
 def list_dir(sourceDir, include_source=None, include_file=True):
     """与 :func:`os.listdir()` 类似，但提供一些筛选功能，且返回生成器对象。
@@ -265,44 +242,71 @@ def get_md5(path):
         return md5obj.hexdigest()
     raise ZrongError("Error when get md5 for %s!"%path)
 
-def get_ftp(ftp_conf, debug=0):
-    """得到一个 已经打开的FTP 实例，和一个 ftp 路径。
+def create_zip(files, trim_arcname=None, target_file=None, **zipfile_args):
+    """创建一个 zip 文件。
 
-    :param str ftp_conf: ftp配置文件，格式如下：
-    
-        >>> {
-        >>>     'server':'127.0.0.1',
-        >>>     'start_path':None,
-        >>>     'user':'admin',
-        >>>     'password':'123456',
-        >>> }
-
-    :returns: ftp, ftpserverstr
-    :rtype: :class:`ftplib.FTP` , str
+    :param list files: 要创建zip 的文件列表。
+    :param int trim_arcname: 若提供这个值，则使用 ZipFile.write(filename, filename[trim_arcname:]) 进行调用。
+    :returns: zip 文件的路径。
+    :rtype: str
 
     """
-    server = ftp_conf.get('server')
-    user = ftp_conf.get('user')
-    password = ftp_conf.get('password')
-    start_path = ftp_conf.get('start_path')
-    slog.info("Connecting FTP server %s ......", server)
-    ftpStr = 'ftp://%s/'%server
-    if start_path:
-        ftpStr = ftpStr+start_path
-    ftp = ftplib.FTP(server, user, password)
-    ftp.set_debuglevel(debug)
-    if start_path:
-        ftp.cwd(start_path)
-    serverFiles = ftp.nlst()
-    slog.info('There are some files in %s:\n[%s]'%(ftpStr, ', '.join(serverFiles)))
-    return ftp, ftpStr
+    zipname = None
+    azip = None
+    if not target_file:
+        azip = tempfile.NamedTemporaryFile(mode='wb', delete=False)
+        zipname = azip.name
+    else:
+        azip = target_file
+        zipname = target_file.name if hasattr(azip, 'read') else azip
+    slog.info('Package %d files to "%s"'%(len(files), azip.name))
+    fileNum = len(files)
+    curFile = 0
+    zipfile_args['mode'] = 'w'
+    if not zipfile_args.get('compression'):
+        zipfile_args['compression'] = zipfile.ZIP_DEFLATED
+    with zipfile.ZipFile(azip, **zipfile_args) as zipf:
+       for f in files:
+           percent = round(curFile/fileNum*100)
+           sys.stdout.write('\r%d%%'%(percent))
+           sys.stdout.flush()
+           zipf.write(f, f[trim_arcname:] if trim_arcname else None )
+           curFile = curFile+1
 
+       sys.stdout.write('\r100%\n')
+       sys.stdout.flush()
 
-getMD5          = get_md5
-writeByTempl    = write_by_templ
-writeFile       = write_file
-listDir         = list_dir
-addLoggerHandler = add_log_handler
-copyDir         = copy_dir
-getFiles        = get_files
-readFile        = read_file
+    if hasattr(azip, 'close'):
+        azip.close()
+    return zipname
+
+def get_max_ver(fmt, files):
+    """有一堆字符串，文件名均包含 %d.%d.%d 形式版本号，返回其中版本号最大的那个。
+    我一般用它来检测一堆发行版中版本号最大的那个文件。
+
+    :param str fmt: 要检测测字符串形式，例如 zrong-%s.tar.gz ，其中 %s 会被正则替换。
+    :param list files: 字符串列表。
+    :returns: 版本号最大的字符串。
+    :rtype: str
+
+    """
+    x, y, z = 0,0,0
+    verpat = fmt%'(\d+).(\d+).(\d+)'
+    verre = re.compile(r''+verpat+'', re.M) 
+    for f in filelist:
+        match = verre.search(f)
+        if match:
+            x1 = int(match.group(1))
+            y1 = int(match.group(2))
+            z1 = int(match.group(3))
+            if x1 >= x and y1 >= y:
+                x = x1
+                y = y1
+                z = z1
+    verfmt = fmt%('%d.%d.%d')
+    name = verfmt%(x, y, z)
+    if x == 0 and y == 0 and z == 0:
+        slog.info('Can not find the string "%s" !'%name)
+        return None
+    return name
+
