@@ -280,7 +280,7 @@ def create_zip(files, trim_arcname=None, target_file=None, **zipfile_args):
         azip.close()
     return zipname
 
-def get_max_ver(fmt, files):
+def get_max_ver(fmt, filelist):
     """有一堆字符串，文件名均包含 %d.%d.%d 形式版本号，返回其中版本号最大的那个。
     我一般用它来检测一堆发行版中版本号最大的那个文件。
 

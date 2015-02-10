@@ -22,7 +22,7 @@ from zrong import slog
 def get_ftp(ftp_conf, debug=0):
     """得到一个 已经打开的FTP 实例，和一个 ftp 路径。
 
-    :param str ftp_conf: ftp配置文件，格式如下：
+    :param dict ftp_conf: ftp配置文件，格式如下：
     
         >>> {
         >>>     'server':'127.0.0.1',
@@ -52,6 +52,16 @@ def get_ftp(ftp_conf, debug=0):
     return ftp, ftpStr
 
 def upload_file(file_path, remote_path, ftp_conf, remove_file=False):
+    """上传第一个指定的文件到 FTP 服务器。
+
+    :param str file_path: 待上传文件的绝对路径。
+    :param str remote_path: 文件在 FTP 服务器上的相对路径（相对于 FTP 服务器的初始路径）。
+    :param dict ftp_conf: ftp配置文件，详见 :func:`get_ftp` 。
+    :param bool remove_file: 上传成功后是否删除本地文件。
+    :returns: FTP 服务器上的文件列表
+    :rtype: list
+
+    """
     check_ftp_conf(ftp_conf)
 
     ftp, ftpStr = get_ftp(ftp_conf)
@@ -65,6 +75,18 @@ def upload_file(file_path, remote_path, ftp_conf, remove_file=False):
         os.remove(file_path)
     slog.info('Upload done.')
     return filelist
+
+def download_file(remote_path, file_path, ftp_conf):
+    check_ftp_conf(ftp_conf)
+    ftp, ftpstr = get_ftp(ftp_conf)
+
+    lf = open(file_path, 'wb')
+    slog.info('Downloading "%s/%s" to "%s" ......'%(ftpstr, remote_path, lf.name))
+    ftp.retrbinary('RETR %s'%remote_path, lf.write)
+    ftp.quit()
+    lf.close()
+    slog.info('Download done.')
+    return lf.name
 
 def upload_dir(dir_name, upload_dir, ftp_conf):
     check_ftp_conf(ftp_conf)
