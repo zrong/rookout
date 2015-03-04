@@ -13,7 +13,7 @@
 
 import os
 import subprocess
-from .base import slog
+from zrong import slog
 
 
 def call(path, *args):
