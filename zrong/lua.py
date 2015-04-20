@@ -84,7 +84,7 @@ class Lua:
             if tp is dict:
                 s += (',%s' % newline).join(
                     [self.__encode(v) if type(k) is int \
-                        else dp + '%s = %s' % (k, self.__encode(v)) \
+                        else dp + '["%s"] = %s' % (k, self.__encode(v)) \
                         for k, v in obj.items()
                     ])
             else:
