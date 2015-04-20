@@ -37,17 +37,22 @@ def call(path, *args):
         output = err.output
     return returncode, output
 
-def get_args(path, *args):
+def get_args(path, *args, bare=False):
     """获取可被 subprogress 执行的 git 参数 list。
 
     :param str path: git 仓库文件夹路径。
     :param \*args: git 的附加参数。
+    :param bare: 是否视为 bare 库
 
     """
     base = [ 'git' ]
     if path:
-        base.append("--git-dir="+os.path.join(path, ".git"))
-        base.append("--work-tree="+path)
+        if bare:
+            base.append('--bare')
+            base.append("--git-dir="+path)
+        else:
+            base.append("--git-dir="+os.path.join(path, ".git"))
+            base.append("--work-tree="+path)
     for arg in args:
         base.append(arg)
     return base
