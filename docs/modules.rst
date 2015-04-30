@@ -6,3 +6,5 @@ zrong
    base
    git
    lua
+   ftp
+   gettext

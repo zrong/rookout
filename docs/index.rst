@@ -12,6 +12,8 @@ Welcome to zrong's documentation!
    base
    git
    lua
+   ftp
+   gettext
 
 Indices and tables
 ==================
