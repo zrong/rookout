@@ -110,10 +110,6 @@ class DictBase(dict):
         self.copy_from_dict(dic)
         return True
 
-    copyFromDict = copy_from_dict
-    saveToFile = save_to_file
-    readFromFile = read_from_file
-
 
 def list_dir(sourceDir, include_source=None, include_file=True):
     """与 :func:`os.listdir()` 类似，但提供一些筛选功能，且返回生成器对象。
