@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: main 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-04 18:22+0800\n"
+"POT-Creation-Date: 2015-06-14 13:25+0800\n"
 "PO-Revision-Date: 2014-08-25 10:51+0800\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
@@ -18,375 +18,424 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.5.7\n"
 
-#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:42
+#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:50
 msgid "ni ma, shen me qing kuang, jin you xi le? zen me shi? cao cong lun!"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:54
+#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:62
 msgid "cao cong lun! qing xiao xin xing shi, zheng zai lu shang!"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:65
+#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:73
 msgid "(xin zhong mo nian) ti bai wan, zhe ba you shi yao keng de jie zou!"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:70
+#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:78
 msgid "ai ni ba cao cong lun xiang qian tuo yi tuo a, dao di ren shen hou qu ."
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:73
+#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:81
 msgid ""
 "(you mei zhi, zhe ba jue dui bu neng keng!) heng! wo you liu duo lan, dui "
 "mian dou shi cai ."
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:86
+#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:94
 msgid "qing kuang bu miao a , dui fang si hu zhun bei gank."
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:89
+#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:97
 msgid "kan wo ni feng fan pan , zheng jiu shi jie !"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:103
+#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:111
 msgid ""
 "cao cong lun neng liang kuai man le o, kuai shi yong 'diao qian' mo fa, ba "
 "ta diao dao di ren shen bian qu."
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:116
+#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:124
 msgid "sheng li zong shi lai de tai rong yi."
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:125
+#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:133
 msgid "oh..."
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:129
+#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:137
 msgid ""
 "bu yao hui xin, wo xiang xin ni hui cheng chang wei yi ge you xiu de zhao "
 "huan shi de."
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:132
+#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:140
 msgid "wo hui nu li de!"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:144
+#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:152
 msgid "ke yi gao su wo ni de ming zi mɑ? qiu hao you, qiu da tui!"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:147
+#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:155
 msgid "mei wen ti!"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:156
+#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:164
 msgid "ni zhi chi na bian de a?"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:158
+#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:166
 msgid "shen me na bian?"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:161
+#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:169
 msgid "ni zhi chi Noxus hai shi Demacia?"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:163
+#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:171
 msgid "zhe liang ge shi shen me dong dong?"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:166
+#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:174
 msgid "zui wei da de hei an zhao huan shi lai le."
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:168
+#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:176
 msgid "ni shi shui? wo de $god ne?"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:171
+#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:179
 msgid ""
 "ming zi bing bu zhong yao, zhong yao de shi, nian qing ren, ni hen you tian "
 "fu!"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:174
+#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:182
 msgid ""
 "wo zai, zhe ge mao si shi NPC, zhuang de hen ku de yang zi, qi shi jiu shi "
 "xuan ze yi xia shi li."
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:177
+#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:185
 msgid "shuo de hao! dan zhe hao wu yi yi. $god gei dian mian zi xing bu xing?"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:183
+#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:191
 msgid ""
 "zai ni de mian qian, jiang hui chu xian liang ge zhen ying, xuan ze qi zhong "
 "yi ge, bing jia ru ta."
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:190
+#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:198
 msgid "wo yi jing zhao ban le, ta men hui fa gong zi gei wo me?"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:193
+#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:201
 msgid "fa mao xian, mei you."
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:195
+#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:203
 msgid "qie."
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:206
-msgid "hua shuo, zhe ge she hun zhu shi shen me dong dong?"
+#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:214
+msgid "yi, zhe ge she xin zhu shi shen me dong dong?"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:209
+#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:217
 msgid ""
 "ben! zhe shi Ali de zhuan shu wu qi, bi pu tong de zhuang bei yao qiang da "
 "xu duo. wo men gan jin zhuang bei shang ba!"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:218
-msgid "bu cuo ma, du ji le, xian zai wo men yi qi qu xiu lian yi ci ba!"
-msgstr ""
-
-#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:220
-msgid "he $god yi qi xiu lian shen me de zui xi huan le."
+#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:225
+msgid "zhe ba jue dui neng chao shen."
 msgstr ""
 
 #: /Volumes/HD1/works/yhq/client/src/game/guide.lua:228
-msgid "Hi! you jian mian le, zhe ci gei ni yi ge xin fu li!"
+msgid "na shi bi xu de! kuai ba Ali ye pai shang chang ba!"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:230
-msgid "huan ge zi shi, zai xiu lian yi ci ma?"
+#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:237
+msgid "bu cuo ma, du ji le, xian zai wo men yi qi qu xiu lian yi ci ba!"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:234
-msgid "xiang de mei!"
-msgstr ""
-
-#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:242
-msgid "shi bu shi zai xiang wo?"
+#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:239
+msgid "he $god yi qi xiu lian shen me de zui xi huan le."
 msgstr ""
 
 #: /Volumes/HD1/works/yhq/client/src/game/guide.lua:245
-msgid "bu kui shi wo de $god, zai ni mian qian hao wu mi mi ke yan!"
+msgid "shi bu shi jue de zi ji geng li hai le?"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:248
-msgid "shao pin zui, wo shi lai jiao ni xue hui sheng ji ji neng de."
+#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:247
+msgid ""
+"quan shen chong man le zheng neng liang, wo yi jing po bu ji dai de yao qu "
+"nue guai le."
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:256
-msgid "you jian mian la!"
+#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:258
+msgid "Hi! you jian mian le, zhe ci gei ni yi ge xin fu li!"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:259
-msgid "wo men zai qu xiu lian yi ci ba!"
+#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:260
+msgid "huan ge zi shi, zai xiu lian yi ci ma?"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:263
-msgid "xiang de mei! ni kan, na li hao xiang you ge bao xiang yo!"
+#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:264
+msgid "xiang de mei!"
 msgstr ""
 
 #: /Volumes/HD1/works/yhq/client/src/game/guide.lua:272
-msgid "ni hen you tian fu, nian qing de zhao huan shi."
+msgid "shi bu shi zai xiang wo?"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:274
-msgid "ni... ni shi shei? ta ne?"
+#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:275
+msgid "bu kui shi wo de $god, zai ni mian qian hao wu mi mi ke yan!"
 msgstr ""
 
 #: /Volumes/HD1/works/yhq/client/src/game/guide.lua:278
+msgid "shao pin zui, wo shi lai jiao ni xue hui sheng ji ji neng de."
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:284
+msgid "shi bu shi gan jue de dao le zhi de fei yue?"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:286
+msgid "wo de da zhao zao yi ji ke nan nai le!"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:297
+msgid "you jian mian la!"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:300
+msgid "wo men zai qu xiu lian yi ci ba!"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:304
+msgid "xiang de mei! ni kan, na li hao xiang you ge bao xiang yo!"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:311
+msgid ""
+"shi nu jing yo! gan jing rang ta ye jia ru dao wo men de dui wu zhong lai ba!"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:313
+msgid "wo yao yong zhe tao hao hua zhen rong da sha si fang le."
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:321
+msgid "ni hen you tian fu, nian qing de zhao huan shi."
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:323
+msgid "ni... ni shi shei? ta ne?"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:327
 msgid "help me!"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:280
+#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:329
 msgid "fang kai wo de $god! you zhong solo yi ju."
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:283
+#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:332
 msgid "bu guang you tian fu, hai ting you yong qi, wo xi huan!"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:285
+#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:334
 msgid ""
 "cai bu yao ni xi huan, wo jin tian jiu yao xiao mie ni zhe ge e mo, zheng "
 "jiu shi jie."
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:288
+#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:337
 msgid "jin tian? jin tian kong pa bu xing. dan wo gei ni zhe ge ji hui!"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:290
+#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:339
 msgid "shen me shi hou, you ni tiao!"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:293
+#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:342
 msgid ""
 "deng ni zhen zheng yong you chao shen zhi li de shi hou, wo zi ran hui lai "
 "zhao ni. ru guo na shi ni reng ran wu fa da bai wo, wo bian hui rang zheng "
 "ge lian meng du yong yuan xiao shi diao! bao kuo ni de $god."
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:295
+#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:344
 msgid "ni gei wo zhan zhu!"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:298
+#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:347
 msgid "ta shi hei an zhao huan shi. ni... ni xian zai hai da bu guo ta de."
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:300
+#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:349
 msgid "wo hui bao hu ni de!"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:303
+#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:352
 msgid "suo yi ni de xian xue hui qiang da qi lai."
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:311
+#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:360
 msgid "ying xiong sheng xing neng gou ji da de ti sheng ni de shi li yo!"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:319
+#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:365
+msgid ""
+"na ni! zhe huo shi gai lun ma? sheng xing hou jing you ru ci qiang da de "
+"xiao yu zhou!"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:368
+msgid "zhen pin, hai shi gan jin qu zhan chang shi shi ba!"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:376
+#, c-format
+msgid "ni zhong yu %s ji la!"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:378
+#, c-format
+msgid "%s ji zen me la? ni zhong yu da ying le?"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:382
+#, c-format
+msgid ""
+"tian tian jiu zhi dao xia xiang. %s ji ke yi shang zhen di wu ge ying xiong, "
+"xiao xue sheng du zhi dao."
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:391
+msgid "gao su ni yi ge you qu de shi qing!"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:393
+msgid "shi ni de yi ge xiao mi mi ma?"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:396
+msgid ""
+"qie! shi gu shi shu yi jing kai qi la! ju shuo shou ji qi suo you sui "
+"pian,    neng rang yi ge bu jie zhi mei zhen xiang da bai yo!"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:404
+msgid ""
+"zhong yu ke yi gou mai jin bi le, ma ma zai ye bu yong dan xin wo hui que "
+"qian le."
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:413
+msgid ""
+"ting shuo ni zai yuan zheng zhong huo de le bu shao mo fa juan zhou, RP bu "
+"cuo ma!"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:416
+msgid "ke zhe shi zuo shen me de?"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:420
+msgid "ben, dang ran shi sheng ji zhao huan shi mo fa yong de la!"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:428
 msgid "jing ji chang yi jing kai fang le!"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:321
+#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:430
 msgid "wei ni er zhan, wo de $god?"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:324
+#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:433
 msgid "hao le, bie pin zui le, kuai qu ba!"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:333
+#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:445
 msgid "shi lian chang shi yi ge te shu de di fang!"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:335
+#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:447
 msgid "wei shen me?"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:338
+#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:450
 msgid ""
 "na li hui diao luo da liang de ying xiong tu pian, dan ni zhi neng shi yong "
 "yi ge ying xiong chu zhan."
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:346
+#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:461
 msgid "ta men shui yuan zheng shi yi ge kao yan ren pin zhi wan fa."
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:348
+#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:463
 msgid "fang xin, wo de ren pin yi xiang bu cuo."
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:356
+#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:474
 msgid "kuai zhuang bei fu wen, heng heng ha hei!"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:366
+#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:484
 msgid "wo men xian zai jiu yi qi kai lu ba!"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:368
+#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:486
 msgid "OK, rang wo men yi qi lu ge tong kuai!"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:375
+#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:493
 msgid "hu dun zai shou, tian xia wo you! zhe yi ju wo yao da"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:378
+#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:496
 msgid ""
 "kan ba ni gei le de, zai song ni yi ge ying xiong, rang ni shuang fan tian."
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:389
-msgid "zhe ba jue dui neng chao shen."
-msgstr ""
-
-#: /Volumes/HD1/works/yhq/client/src/game/guide.lua:392
-msgid "na shi bi xu de! kuai ba Ali ye pai shang chang ba!"
-msgstr ""
-
-#: /Volumes/HD1/works/yhq/client/src/game/ctrls/fight/FightLayerCtrl.lua:712
+#: /Volumes/HD1/works/yhq/client/src/game/ctrls/fight/FightLayerCtrl.lua:714
 msgid "this hero is in skill attack now!"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/ctrls/fight/FightLayerCtrl.lua:719
-#: /Volumes/HD1/works/yhq/client/src/game/ctrls/fight/FightLayerCtrl.lua:1200
-#: /Volumes/HD1/works/yhq/client/src/game/ctrls/fight/FightLayerCtrl.lua:1228
+#: /Volumes/HD1/works/yhq/client/src/game/ctrls/fight/FightLayerCtrl.lua:721
+#: /Volumes/HD1/works/yhq/client/src/game/ctrls/fight/FightLayerCtrl.lua:1198
+#: /Volumes/HD1/works/yhq/client/src/game/ctrls/fight/FightLayerCtrl.lua:1226
 msgid "This hero is in skill attack now!"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/ctrls/fight/FightLayerCtrl.lua:1036
+#: /Volumes/HD1/works/yhq/client/src/game/ctrls/fight/FightLayerCtrl.lua:1035
 msgid "click the hero to switch your selected!"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/ctrls/main/MainSceneCtrl.lua:352
-#: /Volumes/HD1/works/yhq/client/src/game/ctrls/main/MainSceneCtrl.lua:368
-#: /Volumes/HD1/works/yhq/client/src/game/ctrls/main/event/info/DailyAwardLayerCtrl.lua:49
-#: /Volumes/HD1/works/yhq/client/src/game/ctrls/main/event/info/VigorLayerCtrl.lua:36
-#: /Volumes/HD1/works/yhq/client/src/game/ctrls/main/fightmap/FightMapLayerCtrl.lua:42
-#: /Volumes/HD1/works/yhq/client/src/game/ctrls/main/fightready/FightMagicLayerCtrl.lua:123
-#: /Volumes/HD1/works/yhq/client/src/game/ctrls/main/package/PackageMainLayerCtrl.lua:55
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/MainScene.lua:68
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/anabasis/AnabasisLayer.lua:277
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/anabasis/MenuMap.lua:98
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/anabasis/MenuMap.lua:114
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/arena/ArenaMainLayer.lua:58
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/components/FeedbackPanel.lua:168
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/components/GetCoinConfirm.lua:123
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/components/GetCoinConfirm.lua:131
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/components/GetPhysicalConfirm.lua:123
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/components/GetPhysicalConfirm.lua:131
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/components/SharePanel.lua:218
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/equip/EquipCell1.lua:149
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/equip/EquipCell1.lua:166
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/equip/EquipCell1.lua:183
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/equip/EquipGemItem.lua:44
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/equip/EquipOperationLayer.lua:144
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/equip/EquipOperationLayer.lua:169
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/fightmap/BubbleButtonGroup.lua:251
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/fightmap/FightMapLayer.lua:118
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/fightmap/FightMapLayer.lua:467
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/fightmap/discovery/DiscoveryClaw.lua:127
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/fightmap/discovery/DiscoveryClaw.lua:152
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/fightmap/discovery/DiscoveryClaw.lua:167
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/fightmap/gift/FightMapGift.lua:37
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/hero/info/rune/RuneRefreshBtn.lua:34
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/lottery/LotteryMainLayer.lua:386
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/lottery/LotteryMainLayer.lua:407
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/package/SellRow.lua:56
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/store/StoreItem.lua:135
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/team/recruit/HeroRecruitAni.lua:182
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/team/recruit/HeroRecruitLayer.lua:130
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/training/TrainingLayer.lua:261
-#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/item/CellGem.lua:31
-msgid "OK"
-msgstr ""
-
-#: /Volumes/HD1/works/yhq/client/src/game/ctrls/main/MainSceneCtrl.lua:381
+#: /Volumes/HD1/works/yhq/client/src/game/ctrls/main/MainSceneCtrl.lua:298
 msgid "Congratulations! You got prizes!"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/ctrls/main/MainSceneCtrl.lua:383
+#: /Volumes/HD1/works/yhq/client/src/game/ctrls/main/MainSceneCtrl.lua:300
 msgid "You got arena prizes!"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/ctrls/main/MainSceneCtrl.lua:385
+#: /Volumes/HD1/works/yhq/client/src/game/ctrls/main/MainSceneCtrl.lua:302
 msgid "You got story prizes!"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/ctrls/main/MainSceneCtrl.lua:387
+#: /Volumes/HD1/works/yhq/client/src/game/ctrls/main/MainSceneCtrl.lua:305
 msgid "VIP day prizes!"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/ctrls/main/MainSceneCtrl.lua:307
+msgid "day prizes!"
 msgstr ""
 
 #: /Volumes/HD1/works/yhq/client/src/game/ctrls/main/components/GetCoinConfirmCtrl.lua:42
@@ -397,8 +446,75 @@ msgstr ""
 msgid "buy physical succeed!"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/ctrls/main/event/info/DailyAwardLayerCtrl.lua:46
+#: /Volumes/HD1/works/yhq/client/src/game/ctrls/main/event/info/DailyAwardLayerCtrl.lua:42
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/union/master/UnionDetailLayer.lua:219
 msgid "gong xi nin yi ling qu yi xia jiang li"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/ctrls/main/event/info/DailyAwardLayerCtrl.lua:45
+#: /Volumes/HD1/works/yhq/client/src/game/ctrls/main/event/info/VigorLayerCtrl.lua:36
+#: /Volumes/HD1/works/yhq/client/src/game/ctrls/main/fightmap/FightMapLayerCtrl.lua:46
+#: /Volumes/HD1/works/yhq/client/src/game/ctrls/main/fightready/FightMagicLayerCtrl.lua:134
+#: /Volumes/HD1/works/yhq/client/src/game/ctrls/main/friends/FriendsSummonerLayerCtrl.lua:26
+#: /Volumes/HD1/works/yhq/client/src/game/ctrls/main/leftpanel/info/LeftChatCtrl.lua:30
+#: /Volumes/HD1/works/yhq/client/src/game/ctrls/main/package/PackageMainLayerCtrl.lua:55
+#: /Volumes/HD1/works/yhq/client/src/game/ctrls/main/union/UnionJonLayerCtrl.lua:44
+#: /Volumes/HD1/works/yhq/client/src/game/ctrls/main/union/UnionNoticeLayerCtrl.lua:23
+#: /Volumes/HD1/works/yhq/client/src/game/ctrls/main/union/UnionSearchLayerCtrl.lua:24
+#: /Volumes/HD1/works/yhq/client/src/game/models/SocketData.lua:100
+#: /Volumes/HD1/works/yhq/client/src/game/models/SocketData.lua:303
+#: /Volumes/HD1/works/yhq/client/src/game/models/SocketData.lua:319
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/MainScene.lua:92
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/anabasis/AnabasisLayer.lua:277
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/anabasis/MenuMap.lua:98
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/anabasis/MenuMap.lua:116
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/arena/ArenaMainLayer.lua:58
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/components/FeedbackPanel.lua:168
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/components/GetCoinConfirm.lua:123
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/components/GetCoinConfirm.lua:131
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/components/GetPhysicalConfirm.lua:123
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/components/GetPhysicalConfirm.lua:131
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/components/SharePanel.lua:218
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/equip/EquipCell1.lua:77
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/equip/EquipCell1.lua:98
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/equip/EquipCell1.lua:119
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/equip/EquipCell1.lua:214
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/equip/EquipCell1.lua:231
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/equip/EquipCell1.lua:248
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/equip/EquipGemItem.lua:44
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/equip/EquipOperationLayer.lua:144
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/equip/EquipOperationLayer.lua:169
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/fightmap/BubbleButtonGroup.lua:252
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/fightmap/FightMapLayer.lua:118
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/fightmap/FightMapLayer.lua:471
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/fightmap/discovery/DiscoveryClaw.lua:127
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/fightmap/discovery/DiscoveryClaw.lua:152
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/fightmap/discovery/DiscoveryClaw.lua:167
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/fightmap/gift/FightMapGift.lua:37
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/hero/info/rune/RuneRefreshBtn.lua:34
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/leftpanel/info/LeftChat.lua:190
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/leftpanel/info/LeftChat.lua:206
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/leftpanel/info/LeftChat.lua:220
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/lottery/LotteryMainLayer.lua:392
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/lottery/LotteryMainLayer.lua:414
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/package/SellRow.lua:56
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/purchase/VipSpecialLayer.lua:75
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/setting/info/AccountModifyLayer.lua:158
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/store/StoreItem.lua:140
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/team/recruit/HeroRecruitAni.lua:182
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/team/recruit/HeroRecruitLayer.lua:130
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/training/TrainingLayer.lua:265
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/union/UnionGuestLayer.lua:42
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/union/guest/UnionCreateLayer.lua:158
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/union/guest/UnionItem.lua:184
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/union/master/UnionDetailLayer.lua:209
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/union/master/UnionDetailLayer.lua:222
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/union/member/UnionMemberItem.lua:126
+#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/ButtonGroup.lua:172
+#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/ButtonGroup.lua:238
+#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/ButtonGroup.lua:304
+#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/item/CellGem.lua:31
+msgid "OK"
 msgstr ""
 
 #: /Volumes/HD1/works/yhq/client/src/game/ctrls/main/event/info/VigorLayerCtrl.lua:32
@@ -406,29 +522,34 @@ msgstr ""
 msgid "Reward for success, vigor increase %s"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/ctrls/main/fightready/FightMagicLayerCtrl.lua:121
+#: /Volumes/HD1/works/yhq/client/src/game/ctrls/main/fightready/FightMagicLayerCtrl.lua:132
 msgid "strongholds has been reset"
 msgstr ""
 
 #: /Volumes/HD1/works/yhq/client/src/game/ctrls/main/friends/FriendsAddLayerCtrl.lua:22
 #: /Volumes/HD1/works/yhq/client/src/game/ctrls/main/friends/FriendsAddLayerCtrl.lua:38
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/components/leftpanel/LeftPartner.lua:115
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/friends/info/FriendsConfirm.lua:282
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/friends/info/FriendsConfirm.lua:297
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/leftpanel/info/LeftPartner.lua:31
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/union/member/UnionMemberItem.lua:10
 msgid "Accept"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/ctrls/main/friends/FriendsRankLayerCtrl.lua:21
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/components/leftpanel/LeftPartnerItem.lua:35
+#: /Volumes/HD1/works/yhq/client/src/game/ctrls/main/friends/FriendsRankLayerCtrl.lua:23
 #: /Volumes/HD1/works/yhq/client/src/game/views/main/friends/info/FriendsItem.lua:35
 msgid "Get power"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/ctrls/main/friends/FriendsSearchLayerCtrl.lua:24
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/friends/info/FriendsConfirm.lua:304
+#: /Volumes/HD1/works/yhq/client/src/game/ctrls/main/friends/FriendsSearchLayerCtrl.lua:23
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/friends/info/FriendsConfirm.lua:319
 msgid "Say Hey"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/ctrls/main/lottery/LotteryMainLayerCtrl.lua:107
+#: /Volumes/HD1/works/yhq/client/src/game/ctrls/main/friends/FriendsSummonerLayerCtrl.lua:24
+#: /Volumes/HD1/works/yhq/client/src/game/ctrls/main/leftpanel/info/LeftChatCtrl.lua:28
+msgid "shen qing hao you cheng gong"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/ctrls/main/lottery/LotteryMainLayerCtrl.lua:113
 msgid "Get free!"
 msgstr ""
 
@@ -439,22 +560,35 @@ msgstr ""
 #: /Volumes/HD1/works/yhq/client/src/game/ctrls/main/package/PackageMainLayerCtrl.lua:64
 #: /Volumes/HD1/works/yhq/client/src/game/views/main/arena/ArenaMainLayer.lua:60
 #: /Volumes/HD1/works/yhq/client/src/game/views/main/components/FeedbackPanel.lua:107
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/equip/EquipCell1.lua:151
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/equip/EquipCell1.lua:168
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/equip/EquipCell1.lua:185
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/equip/EquipCell1.lua:79
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/equip/EquipCell1.lua:100
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/equip/EquipCell1.lua:121
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/equip/EquipCell1.lua:216
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/equip/EquipCell1.lua:233
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/equip/EquipCell1.lua:250
 #: /Volumes/HD1/works/yhq/client/src/game/views/main/equip/EquipGemItem.lua:46
 #: /Volumes/HD1/works/yhq/client/src/game/views/main/equip/EquipOperationLayer.lua:146
 #: /Volumes/HD1/works/yhq/client/src/game/views/main/equip/EquipOperationLayer.lua:175
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/fightmap/BubbleButtonGroup.lua:260
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/fightmap/BubbleButtonGroup.lua:261
 #: /Volumes/HD1/works/yhq/client/src/game/views/main/fightmap/FightMapLayer.lua:120
 #: /Volumes/HD1/works/yhq/client/src/game/views/main/fightmap/discovery/DiscoveryClaw.lua:137
 #: /Volumes/HD1/works/yhq/client/src/game/views/main/guide/FactionLayer.lua:137
 #: /Volumes/HD1/works/yhq/client/src/game/views/main/hero/info/rune/RuneRefreshBtn.lua:36
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/leftpanel/info/LeftChat.lua:192
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/leftpanel/info/leftevent/EventDays.lua:25
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/leftpanel/info/leftevent/EventDays.lua:36
 #: /Volumes/HD1/works/yhq/client/src/game/views/main/package/SellRow.lua:58
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/store/StoreItem.lua:139
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/setting/info/AccountModifyLayer.lua:160
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/store/StoreItem.lua:144
 #: /Volumes/HD1/works/yhq/client/src/game/views/main/team/recruit/HeroRecruitLayer.lua:132
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/union/member/UnionMemberItem.lua:128
 #: /Volumes/HD1/works/yhq/client/src/game/widgets/main/item/CellGem.lua:33
 msgid "Cancel"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/ctrls/main/purchase/VipSpecialLayerCtrl.lua:33
+#: /Volumes/HD1/works/yhq/client/src/game/ctrls/main/setting/info/AccountModifyLayerCtrl.lua:28
+msgid "succeed"
 msgstr ""
 
 #: /Volumes/HD1/works/yhq/client/src/game/ctrls/main/store/StoreMainLayerCtrl.lua:71
@@ -465,13 +599,89 @@ msgstr ""
 msgid "gou mai cheng gong"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/models/FriendsModel.lua:34
+#: /Volumes/HD1/works/yhq/client/src/game/ctrls/main/union/UnionJonLayerCtrl.lua:42
+#: /Volumes/HD1/works/yhq/client/src/game/ctrls/main/union/UnionSearchLayerCtrl.lua:22
+msgid "shen qing cheng gong"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/ctrls/main/union/UnionNoticeLayerCtrl.lua:21
+msgid "fa bu gong gao cheng gong"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/models/FriendsModel.lua:105
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/friends/FriendsSummonerLayer.lua:150
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/friends/FriendsSummonerLayer.lua:153
 #, c-format
 msgid "di%sguan"
 msgstr ""
 
+#: /Volumes/HD1/works/yhq/client/src/game/models/SocketData.lua:98
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/lottery/LotteryMainLayer.lua:412
+#, c-format
+msgid "You got %s starup goods for %s!"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/models/SocketData.lua:261
+msgid "你"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/models/SocketData.lua:263
+#, c-format
+msgid "%s通过审核成为公会成员"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/models/SocketData.lua:264
+#, c-format
+msgid "%s升级为副会长"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/models/SocketData.lua:265
+#, c-format
+msgid "%s被降级"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/models/SocketData.lua:266
+#, c-format
+msgid "%s被让贤成为会长"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/models/SocketData.lua:267
+#, c-format
+msgid "%s被踢出公会"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/models/SocketData.lua:268
+#, c-format
+msgid "%s退出公会"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/models/SocketData.lua:269
+msgid "你的公会升级了，以后可以招募更多会员，奖励也会更高哦！"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/models/SocketData.lua:270
+msgid "公会解散"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/models/SocketData.lua:271
+#, c-format
+msgid "%s申请加入公会"
+msgstr ""
+
 #: /Volumes/HD1/works/yhq/client/src/game/models/StoryModel.lua:120
 msgid "Dialogue event is triggered!"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/models/UnionModel.lua:43
+msgid "yi ban cheng yuan"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/models/UnionModel.lua:45
+msgid "fu hui zhang"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/models/UnionModel.lua:47
+msgid "hui zhang"
 msgstr ""
 
 #: /Volumes/HD1/works/yhq/client/src/game/views/fight/FightResultLayer.lua:116
@@ -481,8 +691,8 @@ msgid ""
 msgstr ""
 
 #: /Volumes/HD1/works/yhq/client/src/game/views/fight/FightResultLayer.lua:170
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/fightmap/raids/RaidsResultLayer.lua:67
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/guide/RolenameLayer.lua:162
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/fightmap/raids/RaidsResultLayer.lua:79
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/guide/RolenameLayer.lua:169
 msgid "Next"
 msgstr ""
 
@@ -522,21 +732,22 @@ msgstr ""
 msgid "Exit fight"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/views/fight/UILayer.lua:676
+#: /Volumes/HD1/works/yhq/client/src/game/views/fight/UILayer.lua:665
 msgid "score:"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/anabasis/AnabasisBlock.lua:189
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/anabasis/AnabasisBlock.lua:193
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/leftpanel/info/lefttask/TaskItem.lua:171
 #: /Volumes/HD1/works/yhq/client/src/game/views/main/training/TrainingBlock.lua:150
 #: /Volumes/HD1/works/yhq/client/src/game/views/main/worldmap/WorldMapBlock.lua:24
 #: /Volumes/HD1/works/yhq/client/src/game/views/main/worldmap/WorldMapCake.lua:22
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/worldmap/menu/MenuCake.lua:135
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/worldmap/menu/MenuCake.lua:141
 msgid "GO"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/anabasis/AnabasisBlock.lua:198
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/anabasis/AnabasisBlock.lua:202
 #: /Volumes/HD1/works/yhq/client/src/game/views/main/training/TrainingBlock.lua:159
-#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/ButtonGroup.lua:135
+#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/ButtonGroup.lua:343
 msgid "Secret feature, reveal soon!"
 msgstr ""
 
@@ -546,8 +757,8 @@ msgstr ""
 
 #: /Volumes/HD1/works/yhq/client/src/game/views/main/anabasis/MenuItem.lua:50
 #: /Volumes/HD1/works/yhq/client/src/game/views/main/anabasis/MenuItem.lua:73
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/fightmap/MenuItem.lua:68
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/fightmap/MenuItem.lua:88
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/fightmap/MenuItem.lua:106
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/fightmap/MenuItem.lua:126
 #: /Volumes/HD1/works/yhq/client/src/game/views/main/training/MenuItem.lua:47
 #: /Volumes/HD1/works/yhq/client/src/game/views/main/training/MenuItem.lua:70
 msgid "可能掉落"
@@ -561,76 +772,76 @@ msgstr ""
 msgid "ci"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/anabasis/MenuMap.lua:83
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/anabasis/MenuMap.lua:84
 msgid "gui ze shuo ming"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/anabasis/MenuMap.lua:89
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/anabasis/MenuMap.lua:90
 msgid "yuan zheng yin ying dao gui ze shuo ming"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/anabasis/MenuMap.lua:106
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/anabasis/MenuMap.lua:108
 msgid "chong xin kai shi"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/anabasis/MenuMap.lua:112
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/anabasis/MenuMap.lua:114
 msgid "shi fou chong zhi yuan zheng"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/anabasis/MenuMap.lua:117
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/anabasis/MenuMap.lua:119
 #: /Volumes/HD1/works/yhq/client/src/game/views/main/components/FeedbackPanel.lua:171
 #: /Volumes/HD1/works/yhq/client/src/game/views/main/components/SharePanel.lua:232
+#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/ButtonGroup.lua:174
+#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/ButtonGroup.lua:240
+#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/ButtonGroup.lua:306
 msgid "No"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/arena/ArenaItem.lua:51
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/arena/ArenaItem.lua:61
 #: /Volumes/HD1/works/yhq/client/src/game/views/main/guide/FactionLayer.lua:115
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/rank/fight/RankItem.lua:57
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/rank/training/RankItem.lua:57
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/rank/fight/RankItem.lua:66
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/rank/training/RankItem.lua:66
 msgid "Demacia"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/arena/ArenaItem.lua:59
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/arena/ArenaItem.lua:69
 #: /Volumes/HD1/works/yhq/client/src/game/views/main/guide/FactionLayer.lua:121
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/rank/fight/RankItem.lua:65
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/rank/training/RankItem.lua:65
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/rank/fight/RankItem.lua:74
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/rank/training/RankItem.lua:74
 msgid "Noxus"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/arena/ArenaItem.lua:124
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/arena/ArenaItem.lua:134
 msgid "Level"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/arena/ArenaItem.lua:124
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/arena/ArenaItem.lua:176
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/arena/ArenaItem.lua:195
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/arena/ArenaMainLayer.lua:20
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/arena/ArenaMainLayer.lua:34
-msgid ":"
-msgstr ""
-
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/arena/ArenaItem.lua:145
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/components/leftpanel/LeftPartnerItem.lua:83
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/friends/info/FriendsItem.lua:107
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/rank/fight/RankItem.lua:132
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/rank/training/RankItem.lua:132
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/arena/ArenaItem.lua:155
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/friends/info/FriendsItem.lua:117
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/rank/fight/RankItem.lua:141
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/rank/training/RankItem.lua:141
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/union/member/UnionMemberItem.lua:230
 msgid "VIP"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/arena/ArenaItem.lua:176
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/arena/ArenaItem.lua:186
 msgid "win"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/arena/ArenaItem.lua:195
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/arena/ArenaItem.lua:205
 msgid "lose"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/arena/ArenaItem.lua:213
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/arena/ArenaItem.lua:223
 msgid "Challenge"
 msgstr ""
 
 #: /Volumes/HD1/works/yhq/client/src/game/views/main/arena/ArenaMainLayer.lua:20
 msgid "My Arena Top"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/arena/ArenaMainLayer.lua:20
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/arena/ArenaMainLayer.lua:34
+msgid ":"
 msgstr ""
 
 #: /Volumes/HD1/works/yhq/client/src/game/views/main/arena/ArenaMainLayer.lua:34
@@ -647,7 +858,7 @@ msgid "Defend Formation"
 msgstr ""
 
 #: /Volumes/HD1/works/yhq/client/src/game/views/main/arena/ArenaMainLayer.lua:87
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/equip/EquipCell1.lua:129
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/equip/EquipCell1.lua:200
 #: /Volumes/HD1/works/yhq/client/src/game/views/main/equip/EquipOperationLayer.lua:99
 msgid "/"
 msgstr ""
@@ -697,19 +908,15 @@ msgstr ""
 msgid "%s money buy %s physical"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/components/LevelUp.lua:119
-msgid "You got leve up prizes!"
-msgstr ""
-
 #: /Volumes/HD1/works/yhq/client/src/game/views/main/components/MenuOpen.lua:45
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/hero/info/HeroDetailLayer.lua:120
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/hero/info/HeroDetailLayer.lua:121
 #: /Volumes/HD1/works/yhq/client/src/game/widgets/main/ButtonGroup.lua:25
 msgid "Growth"
 msgstr ""
 
 #: /Volumes/HD1/works/yhq/client/src/game/views/main/components/MenuOpen.lua:46
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/components/RightPanel.lua:383
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/components/leftpanel/LeftMenu.lua:27
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/components/RightPanel.lua:318
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/leftpanel/info/LeftMenu.lua:45
 msgid "Event"
 msgstr ""
 
@@ -718,75 +925,78 @@ msgid "Skill"
 msgstr ""
 
 #: /Volumes/HD1/works/yhq/client/src/game/views/main/components/MenuOpen.lua:48
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/hero/info/HeroDetailLayer.lua:195
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/hero/info/HeroDetailLayer.lua:200
 msgid "StarUp"
 msgstr ""
 
 #: /Volumes/HD1/works/yhq/client/src/game/views/main/components/MenuOpen.lua:50
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/components/RightPanel.lua:289
+msgid "Story"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/components/MenuOpen.lua:51
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/components/RightPanel.lua:276
+msgid "Magic"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/components/MenuOpen.lua:52
 msgid "Rune"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/components/MenuOpen.lua:59
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/components/MenuOpen.lua:65
 #, c-format
 msgid "%s is Open"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/components/RightPanel.lua:305
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/components/RightPanel.lua:237
 msgid "World"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/components/RightPanel.lua:317
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/components/RightPanel.lua:249
 msgid "Hero"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/components/RightPanel.lua:332
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/components/RightPanel.lua:264
 #: /Volumes/HD1/works/yhq/client/src/game/views/main/fightready/article/ArticleCircleButton.lua:10
 #: /Volumes/HD1/works/yhq/client/src/game/views/main/fightready/magic/MagicCircleButton.lua:9
 #: /Volumes/HD1/works/yhq/client/src/game/views/main/fightready/magic/MagicListLayer.lua:13
 msgid "Item"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/components/RightPanel.lua:344
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/fightready/article/ArticleCircleButton.lua:10
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/fightready/magic/MagicCircleButton.lua:9
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/fightready/magic/MagicListLayer.lua:12
-#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/ButtonGroup.lua:141
-msgid "MAGIC"
-msgstr ""
-
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/components/RightPanel.lua:356
-msgid "Story"
-msgstr ""
-
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/components/RightPanel.lua:371
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/components/RightPanel.lua:305
 msgid "Equip"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/components/RightPanel.lua:399
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/components/RightPanel.lua:335
 msgid "Rank"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/components/RightPanel.lua:411
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/components/RightPanel.lua:347
 msgid "Friends"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/components/RightPanel.lua:423
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/components/RightPanel.lua:359
 msgid "Store"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/components/RightPanel.lua:435
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/components/RightPanel.lua:371
 msgid "Lottery"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/components/RightPanel.lua:450
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/components/RightPanel.lua:386
 msgid "Mail"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/components/RightPanel.lua:465
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/components/RightPanel.lua:401
+msgid "Union"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/components/RightPanel.lua:417
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/leftpanel/info/LeftSummoner.lua:333
 msgid "Setting"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/components/RightPanel.lua:476
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/components/RightPanel.lua:429
 msgid "Feedback"
 msgstr ""
 
@@ -811,88 +1021,35 @@ msgstr ""
 msgid "Abandon share?"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/components/leftpanel/LeftMenu.lua:15
-msgid "Summoner"
-msgstr ""
-
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/components/leftpanel/LeftMenu.lua:21
-msgid "Tasks"
-msgstr ""
-
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/components/leftpanel/LeftMenu.lua:33
-msgid "Partner"
-msgstr ""
-
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/components/leftpanel/LeftPartner.lua:103
-msgid "Get and send power"
-msgstr ""
-
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/components/leftpanel/LeftPartner.lua:150
-msgid "All Friend"
-msgstr ""
-
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/components/leftpanel/LeftPartnerItem.lua:62
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/friends/info/FriendsItem.lua:86
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/rank/fight/RankItem.lua:111
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/rank/training/RankItem.lua:111
-msgid "Level:"
-msgstr ""
-
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/components/leftpanel/LeftSummoner.lua:242
-msgid "Summoner Level"
-msgstr ""
-
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/components/leftpanel/LeftSummoner.lua:281
-msgid "VIP Level"
-msgstr ""
-
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/components/leftpanel/LeftSummoner.lua:319
-msgid "VIP Upgrand"
-msgstr ""
-
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/components/leftpanel/LeftSummoner.lua:338
-msgid "Account Management"
-msgstr ""
-
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/components/leftpanel/PhysicalCircle.lua:74
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/components/leftpanel/PhysicalCircle.lua:166
-msgid "physical full"
-msgstr ""
-
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/components/leftpanel/PhysicalCircle.lua:81
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/components/leftpanel/PhysicalCircle.lua:166
-msgid "next physical"
-msgstr ""
-
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/equip/EquipCell1.lua:135
-#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/item/CellEquip.lua:45
-#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/item/CellEquip.lua:76
-msgid "Power:"
-msgstr ""
-
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/equip/EquipCell1.lua:141
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/equip/EquipCell1.lua:69
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/equip/EquipCell1.lua:206
 #: /Volumes/HD1/works/yhq/client/src/game/views/main/equip/EquipOperationLayer.lua:109
 msgid "Enhance"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/equip/EquipCell1.lua:146
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/equip/EquipCell1.lua:74
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/equip/EquipCell1.lua:211
 msgid "Enhance this equip!"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/equip/EquipCell1.lua:158
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/equip/EquipCell1.lua:90
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/equip/EquipCell1.lua:223
 msgid "Auto Enhance"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/equip/EquipCell1.lua:163
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/equip/EquipCell1.lua:95
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/equip/EquipCell1.lua:228
 msgid "Auto enhance this equip!"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/equip/EquipCell1.lua:175
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/equip/EquipCell1.lua:111
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/equip/EquipCell1.lua:240
 #: /Volumes/HD1/works/yhq/client/src/game/views/main/equip/EquipOperationLayer.lua:136
 msgid "Upgrade"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/equip/EquipCell1.lua:180
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/equip/EquipCell1.lua:116
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/equip/EquipCell1.lua:245
 #: /Volumes/HD1/works/yhq/client/src/game/views/main/equip/EquipOperationLayer.lua:142
 msgid "Upgrade this equip!"
 msgstr ""
@@ -930,7 +1087,7 @@ msgstr ""
 #: /Volumes/HD1/works/yhq/client/src/game/views/main/equip/EquipOperationLayer.lua:104
 #: /Volumes/HD1/works/yhq/client/src/game/views/main/equip/EquipOperationLayer.lua:126
 #: /Volumes/HD1/works/yhq/client/src/game/views/main/equip/EquipOperationLayer.lua:159
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/package/SellExchange.lua:56
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/package/SellExchange.lua:64
 msgid "Gold"
 msgstr ""
 
@@ -952,7 +1109,8 @@ msgid "Crystal"
 msgstr ""
 
 #: /Volumes/HD1/works/yhq/client/src/game/views/main/equip/EquipOperationLayer.lua:151
-msgid "Upgrade need level 10!"
+#, c-format
+msgid "Upgrade need level %s!"
 msgstr ""
 
 #: /Volumes/HD1/works/yhq/client/src/game/views/main/equip/EquipOperationLayer.lua:159
@@ -985,15 +1143,19 @@ msgstr ""
 msgid "Stat"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/event/info/DailyAwardItem.lua:76
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/event/info/VigorLayer.lua:36
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/mail/MailBodyLayer.lua:104
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/setting/info/SettingGiftCardLayer.lua:23
-msgid "Get it"
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/event/info/DailyAwardItem.lua:49
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/event/info/DailyAwardItem.lua:55
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/leftpanel/info/leftevent/EventDays.lua:29
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/leftpanel/info/leftevent/EventDays.lua:30
+msgid "Has obtained"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/event/info/DailyAwardLayer.lua:25
-msgid "Morning and afternoon can each sign in once a day."
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/event/info/DailyAwardItem.lua:74
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/event/info/VigorLayer.lua:36
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/mail/MailBodyLayer.lua:104
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/purchase/VipSpecialLayer.lua:68
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/setting/info/SettingGiftCardLayer.lua:23
+msgid "Get it"
 msgstr ""
 
 #: /Volumes/HD1/works/yhq/client/src/game/views/main/event/info/VigorLayer.lua:26
@@ -1032,12 +1194,12 @@ msgstr ""
 msgid "RAID"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/fightmap/BubbleButtonGroup.lua:247
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/fightmap/BubbleButtonGroup.lua:249
 #, c-format
-msgid "每次需要消耗 %d 张扫荡令，确定开始扫荡吗？"
+msgid "每次需要消耗 %d 张扫荡令和 %d 体力，确定开始扫荡吗？"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/fightmap/BubbleButtonGroup.lua:266
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/fightmap/BubbleButtonGroup.lua:267
 msgid "You need clear this stage before sweep."
 msgstr ""
 
@@ -1049,26 +1211,27 @@ msgstr ""
 msgid "New stage have been opened!"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/fightmap/FightMapLayer.lua:449
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/fightmap/FightMapLayer.lua:464
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/fightmap/FightMapLayer.lua:453
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/fightmap/FightMapLayer.lua:468
 msgid ""
 "gong xi nin da kai le guo guan bao xiang, nin jiang huo de ru xia jiang li:"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/fightmap/MenuItem.lua:20
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/fightmap/MenuItem.lua:51
 msgid "Number remaining"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/fightmap/MenuItem.lua:204
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/fightmap/MenuItem.lua:254
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/fightready/hero/FightHeroLayer.lua:169
 msgid "xiao hao"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/fightmap/MenuItem.lua:251
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/fightmap/MenuItem.lua:301
 #: /Volumes/HD1/works/yhq/client/src/game/views/main/worldmap/MenuItem.lua:122
 msgid "TASK"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/fightmap/MenuItem.lua:256
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/fightmap/MenuItem.lua:306
 #: /Volumes/HD1/works/yhq/client/src/game/views/main/worldmap/MenuItem.lua:127
 msgid "on"
 msgstr ""
@@ -1109,24 +1272,40 @@ msgstr ""
 msgid "Raid again"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/fightready/hero/FightHeroLayer.lua:51
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/fightready/hero/FightHeroLayer.lua:96
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/fightready/hero/FightHeroLayer.lua:135
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/fightmap/raids/RaidsResultLayer.lua:67
+msgid "Raid ten"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/fightmap/raids/RaidsResultLayer.lua:69
+#, c-format
+msgid "Raids ten need level %s!"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/fightready/article/ArticleCircleButton.lua:10
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/fightready/magic/MagicCircleButton.lua:9
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/fightready/magic/MagicListLayer.lua:12
+#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/ButtonGroup.lua:349
+msgid "MAGIC"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/fightready/hero/FightHeroLayer.lua:54
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/fightready/hero/FightHeroLayer.lua:99
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/fightready/hero/FightHeroLayer.lua:141
 msgid "You must choose some heroes fight."
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/fightready/hero/FightHeroLayer.lua:77
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/fightready/hero/FightHeroLayer.lua:80
 #: /Volumes/HD1/works/yhq/client/src/game/views/main/fightready/magic/FightMagicLayer.lua:115
 msgid "SAVE"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/fightready/hero/FightHeroLayer.lua:121
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/fightready/hero/FightHeroLayer.lua:127
 #: /Volumes/HD1/works/yhq/client/src/game/views/main/fightready/magic/FightMagicLayer.lua:81
-#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/ButtonGroup.lua:359
+#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/ButtonGroup.lua:564
 msgid "FIGHT"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/fightready/hero/FightHeroLayer.lua:133
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/fightready/hero/FightHeroLayer.lua:139
 msgid "Next step"
 msgstr ""
 
@@ -1140,6 +1319,11 @@ msgstr ""
 
 #: /Volumes/HD1/works/yhq/client/src/game/views/main/fightready/hero/HeroCircleButton.lua:10
 msgid "WAVE 3"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/fightready/hero/HeroList.lua:99
+#, c-format
+msgid "%s heros need level %s!"
 msgstr ""
 
 #: /Volumes/HD1/works/yhq/client/src/game/views/main/fightready/hero/HeroListLayer.lua:11
@@ -1172,16 +1356,127 @@ msgstr ""
 msgid "You must have a magic to enter this place."
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/friends/info/FriendsConfirm.lua:253
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/friends/FriendsMenu.lua:14
+msgid ""
+"My\n"
+"Friends"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/friends/FriendsMenu.lua:22
+msgid ""
+"Search\n"
+"New Friend"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/friends/FriendsMenu.lua:33
+msgid ""
+"Friend\n"
+"Rank"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/friends/FriendsMenu.lua:43
+msgid ""
+"Add\n"
+"New Friends"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/friends/FriendsSummonerLayer.lua:38
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/leftpanel/info/leftchat/ChatMenuItem.lua:65
+msgid "+friend"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/friends/FriendsSummonerLayer.lua:52
+msgid "qie cuo"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/friends/FriendsSummonerLayer.lua:77
+msgid "gen ta liao tian"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/friends/FriendsSummonerLayer.lua:163
+msgid "Gold output: 205/h, Crystal output: 2/d"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/friends/FriendsSummonerLayer.lua:189
+msgid "zui qiang zhen rong"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/friends/FriendsSummonerLayer.lua:189
+msgid "Overall combat capability:"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/friends/FriendsSummonerLayer.lua:236
+msgid "gong hui deng ji"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/friends/FriendsSummonerLayer.lua:256
+msgid "zhi wei shi"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/friends/FriendsSummonerLayer.lua:267
+msgid "shen qing jia ru"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/friends/FriendsSummonerLayer.lua:286
+msgid "hai wei jia ru ren he gong hui"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/friends/FriendsSummonerLayer.lua:297
+msgid "yao qing"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/friends/info/FriendsConfirm.lua:36
+#, c-format
+msgid "Player ID:%s"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/friends/info/FriendsConfirm.lua:109
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/friends/info/FriendsItem.lua:63
+msgid "Send Physical"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/friends/info/FriendsConfirm.lua:111
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/friends/info/FriendsConfirm.lua:113
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/friends/info/FriendsItem.lua:65
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/friends/info/FriendsItem.lua:67
+msgid "Get Physical"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/friends/info/FriendsConfirm.lua:170
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/friends/info/FriendsItem.lua:96
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/rank/fight/RankItem.lua:120
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/rank/training/RankItem.lua:120
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/union/member/UnionMemberItem.lua:210
+msgid "Level:"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/friends/info/FriendsConfirm.lua:190
+msgid "/ VIPLv:"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/friends/info/FriendsConfirm.lua:210
+msgid "Process:"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/friends/info/FriendsConfirm.lua:230
+msgid "Latest login:"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/friends/info/FriendsConfirm.lua:252
 msgid "Send Power"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/friends/info/FriendsConfirm.lua:270
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/friends/info/FriendsConfirm.lua:277
 msgid "Fight At"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/friends/info/FriendsConfirm.lua:293
-msgid "Ban"
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/friends/info/FriendsConfirm.lua:308
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/mail/MailBodyLayer.lua:104
+msgid "Delete"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/friends/info/FriendsMyLayer.lua:39
+msgid "No friends data"
 msgstr ""
 
 #: /Volumes/HD1/works/yhq/client/src/game/views/main/friends/info/FriendsRankLayer.lua:35
@@ -1209,11 +1504,12 @@ msgstr ""
 msgid "My Stat:"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/friends/info/FriendsSearchLayer.lua:28
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/friends/info/FriendsSearchLayer.lua:29
 msgid "Input ID NO. that who u find"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/friends/info/FriendsSearchLayer.lua:36
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/friends/info/FriendsSearchLayer.lua:38
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/union/guest/UnionSearchLayer.lua:45
 msgid "Find out"
 msgstr ""
 
@@ -1262,15 +1558,15 @@ msgstr ""
 msgid "Please enter you nickname!"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/guide/RolenameLayer.lua:141
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/guide/RolenameLayer.lua:148
 msgid "Random"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/guide/RolenameLayer.lua:197
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/guide/RolenameLayer.lua:206
 msgid "Go"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/guide/RolenameLayer.lua:204
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/guide/RolenameLayer.lua:208
 msgid "Select my avator face:"
 msgstr ""
 
@@ -1278,82 +1574,88 @@ msgstr ""
 msgid "Sorry, no equip to weat yet."
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/hero/info/HeroDetailLayer.lua:86
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/hero/info/HeroDetailLayer.lua:87
 #: /Volumes/HD1/works/yhq/client/src/game/views/main/team/recruit/HeroRecruitLayer.lua:77
 msgid "Positioning: "
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/hero/info/HeroDetailLayer.lua:125
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/hero/info/HeroDetailLayer.lua:126
 #, c-format
 msgid "Growth need level %s!"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/hero/info/HeroDetailLayer.lua:200
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/hero/info/HeroDetailLayer.lua:205
 #, c-format
 msgid "StarUp need level %s!"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/hero/info/HeroDetailLayer.lua:216
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/hero/info/HeroDetailLayer.lua:225
 msgid "GetStar"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/hero/info/HeroDetailLayer.lua:220
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/hero/info/HeroDetailLayer.lua:229
 msgid "GetStar!"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/hero/info/HeroDetailLayer.lua:284
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/hero/info/HeroDetailLayer.lua:293
 #: /Volumes/HD1/works/yhq/client/src/game/views/main/team/recruit/HeroRecruitLayer.lua:164
 msgid "atk"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/hero/info/HeroDetailLayer.lua:289
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/hero/info/HeroDetailLayer.lua:321
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/hero/info/HeroDetailLayer.lua:298
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/hero/info/HeroDetailLayer.lua:330
 #: /Volumes/HD1/works/yhq/client/src/game/views/main/team/recruit/HeroRecruitLayer.lua:169
 #: /Volumes/HD1/works/yhq/client/src/game/views/main/team/recruit/HeroRecruitLayer.lua:192
 msgid "hp"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/hero/info/HeroDetailLayer.lua:294
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/hero/info/HeroDetailLayer.lua:326
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/hero/info/HeroDetailLayer.lua:303
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/hero/info/HeroDetailLayer.lua:335
 #: /Volumes/HD1/works/yhq/client/src/game/views/main/team/recruit/HeroRecruitLayer.lua:174
 #: /Volumes/HD1/works/yhq/client/src/game/views/main/team/recruit/HeroRecruitLayer.lua:197
 msgid "def"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/hero/info/HeroDetailLayer.lua:299
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/hero/info/HeroDetailLayer.lua:331
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/hero/info/HeroDetailLayer.lua:308
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/hero/info/HeroDetailLayer.lua:340
 #: /Volumes/HD1/works/yhq/client/src/game/views/main/team/recruit/HeroRecruitLayer.lua:179
 #: /Volumes/HD1/works/yhq/client/src/game/views/main/team/recruit/HeroRecruitLayer.lua:202
 msgid "magicDef"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/hero/info/HeroDetailLayer.lua:316
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/hero/info/HeroDetailLayer.lua:325
 #: /Volumes/HD1/works/yhq/client/src/game/views/main/team/recruit/HeroRecruitLayer.lua:187
 msgid "magicAtk"
 msgstr ""
 
 #: /Volumes/HD1/works/yhq/client/src/game/views/main/hero/info/HeroEquipLayer.lua:19
-#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/ButtonGroup.lua:399
+#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/ButtonGroup.lua:604
 msgid "HAND"
 msgstr ""
 
 #: /Volumes/HD1/works/yhq/client/src/game/views/main/hero/info/HeroEquipLayer.lua:23
-#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/ButtonGroup.lua:409
+#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/ButtonGroup.lua:614
 msgid "HEAD"
 msgstr ""
 
 #: /Volumes/HD1/works/yhq/client/src/game/views/main/hero/info/HeroEquipLayer.lua:27
-#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/ButtonGroup.lua:419
+#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/ButtonGroup.lua:624
 msgid "CHEST"
 msgstr ""
 
 #: /Volumes/HD1/works/yhq/client/src/game/views/main/hero/info/HeroEquipLayer.lua:31
-#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/ButtonGroup.lua:429
+#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/ButtonGroup.lua:634
 msgid "LOIN"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/hero/info/HeroSkillLayer.lua:176
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/hero/info/HeroSkillLayer.lua:208
 msgid "Upgrade Skill"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/hero/info/HeroSkillLayer.lua:213
+#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/ButtonGroup.lua:64
+#, c-format
+msgid "Skill need level %s!"
 msgstr ""
 
 #: /Volumes/HD1/works/yhq/client/src/game/views/main/hero/info/elite/EliteList.lua:26
@@ -1377,6 +1679,149 @@ msgstr ""
 #: /Volumes/HD1/works/yhq/client/src/game/views/main/hero/info/rune/RuneRefreshBtn.lua:30
 #, c-format
 msgid "Are you sure to use %s money for rune?"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/leftpanel/info/LeftChat.lua:37
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/leftpanel/info/LeftChat.lua:271
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/leftpanel/info/leftchat/ChatMenuItem.lua:78
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/union/member/UnionMemberItem.lua:16
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/union/member/UnionMemberItem.lua:21
+msgid "si liao"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/leftpanel/info/LeftChat.lua:146
+msgid "Send"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/leftpanel/info/LeftChat.lua:188
+#, c-format
+msgid "%s not enough! use %s money?"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/leftpanel/info/LeftChat.lua:204
+#, c-format
+msgid "deng ji da dao %s ji cai neng zai shi jie liao tian"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/leftpanel/info/LeftChat.lua:218
+msgid "qing xuan ze yi ge si liao dui xiang"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/leftpanel/info/LeftChat.lua:252
+msgid "shi jie"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/leftpanel/info/LeftChat.lua:262
+msgid "gong hui"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/leftpanel/info/LeftMenu.lua:17
+msgid "Summoner"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/leftpanel/info/LeftMenu.lua:24
+msgid "Tasks"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/leftpanel/info/LeftMenu.lua:31
+msgid "Partner"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/leftpanel/info/LeftMenu.lua:38
+msgid "Chat"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/leftpanel/info/LeftPartner.lua:49
+msgid "Get power form friends"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/leftpanel/info/LeftPartner.lua:90
+msgid "Add new friends"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/leftpanel/info/LeftPartner.lua:144
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/leftpanel/info/LeftPartner.lua:180
+msgid "All Friend"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/leftpanel/info/LeftPartner.lua:172
+msgid "No friends message"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/leftpanel/info/LeftSummoner.lua:226
+#, c-format
+msgid "Buy gold need level %s!"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/leftpanel/info/LeftSummoner.lua:256
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/player/info/PlayerSummaryLayer.lua:44
+msgid "Summoner Level:"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/leftpanel/info/LeftSummoner.lua:295
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/player/info/PlayerSummaryLayer.lua:68
+msgid "VIP Level:"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/leftpanel/info/LeftSummoner.lua:333
+msgid "Account Management"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/leftpanel/info/LeftSummoner.lua:342
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/purchase/Menu.lua:38
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/purchase/Menu.lua:68
+#, c-format
+msgid "VIP%sPrivilege"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/leftpanel/info/PhysicalCircle.lua:74
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/leftpanel/info/PhysicalCircle.lua:166
+msgid "physical full"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/leftpanel/info/PhysicalCircle.lua:81
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/leftpanel/info/PhysicalCircle.lua:166
+msgid "next physical"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/leftpanel/info/leftchat/ChatItem.lua:66
+msgid "fa song gei:"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/leftpanel/info/leftchat/ChatList.lua:27
+msgid "Sorry, no message to show."
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/leftpanel/info/leftchat/ChatMenuItem.lua:43
+msgid "wan jia xin xi"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/leftpanel/info/leftevent/EventDays.lua:23
+msgid "Day login prizes!"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/leftpanel/info/leftevent/EventDays.lua:32
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/leftpanel/info/leftevent/EventDays.lua:38
+msgid "Expired"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/leftpanel/info/leftevent/EventDays.lua:32
+#, c-format
+msgid "Use %s money for re get?"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/leftpanel/info/leftevent/EventDays.lua:34
+msgid "RE GET"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/leftpanel/info/leftevent/EventDays.lua:40
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/leftpanel/info/leftevent/EventDays.lua:41
+msgid "Date has not arrived yet!"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/leftpanel/info/leftevent/EventDays.lua:44
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/leftpanel/info/lefttask/TaskItem.lua:183
+msgid "GET"
 msgstr ""
 
 #: /Volumes/HD1/works/yhq/client/src/game/views/main/lottery/LotteryMainLayer.lua:107
@@ -1409,25 +1854,16 @@ msgstr ""
 msgid "After free"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/lottery/LotteryMainLayer.lua:378
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/lottery/LotteryMainLayer.lua:384
 msgid "Retry ten times"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/lottery/LotteryMainLayer.lua:378
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/lottery/LotteryMainLayer.lua:384
 msgid "Retry one time"
-msgstr ""
-
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/lottery/LotteryMainLayer.lua:405
-#, c-format
-msgid "You got %s starup goods for %s!"
 msgstr ""
 
 #: /Volumes/HD1/works/yhq/client/src/game/views/main/mail/MailBodyLayer.lua:96
 msgid "To see"
-msgstr ""
-
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/mail/MailBodyLayer.lua:104
-msgid "Delete"
 msgstr ""
 
 #: /Volumes/HD1/works/yhq/client/src/game/views/main/mail/MailItem.lua:67
@@ -1454,7 +1890,7 @@ msgstr ""
 msgid "Sorry, no goods for sell."
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/package/SellExchange.lua:43
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/package/SellExchange.lua:51
 msgid "What do you want to exchange?"
 msgstr ""
 
@@ -1470,51 +1906,56 @@ msgstr ""
 msgid "Back"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/player/info/PlayerMagicLayer.lua:77
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/worldmap/WorldMapLayer.lua:122
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/worldmap/menu/MenuCake.lua:92
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/player/info/PlayerMagicLayer.lua:82
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/worldmap/WorldMapLayer.lua:121
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/worldmap/menu/MenuCake.lua:98
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/worldmap/menu/MenuLayer.lua:77
 #, c-format
 msgid "Summoner level need %s!"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/player/info/PlayerMagicLayer.lua:119
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/player/info/PlayerMagicLayer.lua:128
 msgid "Level Up"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/player/info/PlayerMagicLayer.lua:121
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/player/info/PlayerMagicLayer.lua:130
 msgid "max"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/player/info/PlayerMagicLayer.lua:122
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/player/info/PlayerMagicLayer.lua:228
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/player/info/PlayerMagicLayer.lua:131
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/player/info/PlayerMagicLayer.lua:237
 msgid "Level max"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/player/info/PlayerMagicLayer.lua:128
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/player/info/PlayerMagicLayer.lua:130
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/player/info/PlayerMagicLayer.lua:137
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/player/info/PlayerMagicLayer.lua:139
 msgid "No get"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/player/info/PlayerMagicLayer.lua:129
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/player/info/PlayerMagicLayer.lua:138
 msgid "Learning"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/player/info/PlayerSummaryLayer.lua:44
-msgid "Summoner Level:"
-msgstr ""
-
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/player/info/PlayerSummaryLayer.lua:68
-msgid "VIP Level:"
-msgstr ""
-
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/purchase/Menu.lua:38
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/purchase/Menu.lua:68
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/purchase/ProductItem.lua:82
 #, c-format
-msgid "VIP%sPrivilege"
+msgid "%s yuan"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/purchase/ProductItem.lua:74
-msgid "元"
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/purchase/VipSpecialLayer.lua:66
+msgid "VIP prizes!"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/purchase/VipSpecialLayer.lua:73
+msgid "VIP lv not enough"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/purchase/VipSpecialLayer.lua:75
+msgid "Go to recharge"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/purchase/VipSpecialLayer.lua:82
+#, c-format
+msgid "Get VIP %s gift"
 msgstr ""
 
 #: /Volumes/HD1/works/yhq/client/src/game/views/main/rank/fight/RankListLayer.lua:17
@@ -1527,63 +1968,82 @@ msgstr ""
 msgid "No ranking"
 msgstr ""
 
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/setting/info/AccountModifyLayer.lua:13
+msgid "MODIFY NAME"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/setting/info/AccountModifyLayer.lua:14
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/setting/info/AccountModifyLayer.lua:21
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/setting/info/AccountModifyLayer.lua:28
+#, c-format
+msgid "update account info %s"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/setting/info/AccountModifyLayer.lua:14
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/setting/info/AccountModifyLayer.lua:15
+msgid "Player Name"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/setting/info/AccountModifyLayer.lua:20
+msgid "MODIFY MOBILE"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/setting/info/AccountModifyLayer.lua:21
 #: /Volumes/HD1/works/yhq/client/src/game/views/main/setting/info/AccountModifyLayer.lua:22
+msgid "Mobile"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/setting/info/AccountModifyLayer.lua:27
+msgid "MODIFY EMAIL"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/setting/info/AccountModifyLayer.lua:28
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/setting/info/AccountModifyLayer.lua:29
+msgid "Email"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/setting/info/AccountModifyLayer.lua:48
 #, c-format
 msgid "Created at: %s"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/setting/info/AccountModifyLayer.lua:48
-msgid "MODIFY PLAYER NAME"
-msgstr ""
-
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/setting/info/AccountModifyLayer.lua:58
-msgid ""
-"The descriptions of BUFF. Maximum  is twenty chinese character or seventy "
-"english character."
-msgstr ""
-
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/setting/info/AccountModifyLayer.lua:71
-msgid "Player Name..."
-msgstr ""
-
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/setting/info/AccountModifyLayer.lua:79
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/setting/info/AccountModifyLayer.lua:145
 msgid "Edit"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/setting/info/SettingAccountLayer.lua:37
-msgid "Player Name"
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/setting/info/AccountModifyLayer.lua:150
+msgid "input format error!"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/setting/info/SettingAccountLayer.lua:63
-msgid "Account ID"
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/setting/info/AccountModifyLayer.lua:156
+#, c-format
+msgid "Use %s money for change name?"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/setting/info/SettingAccountLayer.lua:89
-msgid "MobilePhone Number"
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/setting/info/SettingAccountLayer.lua:42
+msgid "Player Name:"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/setting/info/SettingAccountLayer.lua:99
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/setting/info/SettingAccountLayer.lua:68
+msgid "Player ID:"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/setting/info/SettingAccountLayer.lua:94
+msgid "Mobile Phone Number:"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/setting/info/SettingAccountLayer.lua:105
 msgid "Unverified"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/setting/info/SettingAccountLayer.lua:125
-msgid "Email Address"
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/setting/info/SettingAccountLayer.lua:132
+msgid "Email Address:"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/setting/info/SettingAccountLayer.lua:135
-msgid "Null"
-msgstr ""
-
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/setting/info/SettingAccountLayer.lua:155
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/setting/info/SettingAccountLayer.lua:164
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/setting/info/SettingAccountLayer.lua:185
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/setting/info/SettingAccountLayer.lua:206
 msgid "Modify"
-msgstr ""
-
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/setting/info/SettingAccountLayer.lua:175
-msgid "Verify"
-msgstr ""
-
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/setting/info/SettingAccountLayer.lua:184
-msgid "Fill"
 msgstr ""
 
 #: /Volumes/HD1/works/yhq/client/src/game/views/main/setting/info/SettingAccountMenu.lua:13
@@ -1630,15 +2090,15 @@ msgstr ""
 msgid "Please enter the correct card SN !!"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/store/StoreItem.lua:113
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/store/StoreItem.lua:118
 msgid "Buy"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/store/StoreItem.lua:119
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/store/StoreItem.lua:124
 msgid "Don't have enough money!"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/store/StoreItem.lua:131
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/store/StoreItem.lua:136
 msgid "How many do you want to buy?"
 msgstr ""
 
@@ -1693,7 +2153,7 @@ msgstr ""
 msgid "Curren Score:"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/training/TrainingLayer.lua:258
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/training/TrainingLayer.lua:262
 msgid "da kai shi lian bao xiang hou nin fa xian le ru xia jiang li:"
 msgstr ""
 
@@ -1705,7 +2165,203 @@ msgstr ""
 msgid "Choose training hero"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/views/main/worldmap/WorldMapLayer.lua:124
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/union/UnionGuestLayer.lua:32
+msgid "chuang jian wo de gong hui"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/union/UnionGuestLayer.lua:40
+#, c-format
+msgid "zhao huan shi deng ji xu yao dao da %s cai neng chuang jian gong hui"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/union/guest/UnionColorList.lua:135
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/union/guest/UnionColorList.lua:145
+msgid "hui qi yan se"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/union/guest/UnionColorList.lua:156
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/union/guest/UnionColorList.lua:167
+msgid "hui biao yan se"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/union/guest/UnionCreateLayer.lua:43
+msgid "wo de gong hui yu lan:"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/union/guest/UnionCreateLayer.lua:56
+msgid "gong hui ming cheng"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/union/guest/UnionCreateLayer.lua:69
+msgid "hui zhang:"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/union/guest/UnionCreateLayer.lua:78
+msgid "cheng yuan"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/union/guest/UnionCreateLayer.lua:89
+msgid "shu ru gong hui ming cheng"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/union/guest/UnionCreateLayer.lua:142
+msgid "que ding chuang jian"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/union/guest/UnionCreateLayer.lua:156
+msgid "qing wei gong hui qi ge ming zi"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/union/guest/UnionIconList.lua:72
+msgid "xuan ze hui biao"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/union/guest/UnionItem.lua:115
+msgid "人"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/union/guest/UnionItem.lua:125
+msgid "hui zhang: "
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/union/guest/UnionItem.lua:136
+msgid "入会条件: "
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/union/guest/UnionItem.lua:147
+msgid "召唤师等级达到19"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/union/guest/UnionItem.lua:163
+msgid "cheng yuan yi man"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/union/guest/UnionItem.lua:173
+msgid "shen qing"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/union/guest/UnionItem.lua:182
+#, c-format
+msgid "zhao huan shi deng ji xu yao dao da %s cai neng jia ru gong hui"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/union/guest/UnionJonLayer.lua:34
+msgid "No union data"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/union/guest/UnionMenu.lua:13
+msgid "jia ru gong hui"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/union/guest/UnionMenu.lua:13
+msgid "join union"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/union/guest/UnionMenu.lua:19
+msgid "cha zhao gong hui"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/union/guest/UnionMenu.lua:19
+msgid "search union"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/union/guest/UnionSearchLayer.lua:36
+msgid "Input union ID NO"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/union/master/UnionDetailLayer.lua:40
+msgid "LEVEL"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/union/master/UnionDetailLayer.lua:116
+msgid "ling qu"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/union/master/UnionDetailLayer.lua:155
+msgid "quan bu"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/union/master/UnionDetailLayer.lua:165
+msgid "zui huo yue de gong hui hui yuan"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/union/master/UnionDetailLayer.lua:191
+#, c-format
+msgid "huo yue du bu gou, xu yao %s"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/union/master/UnionDetailLayer.lua:196
+msgid "gong hui deng ji yi man"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/union/master/UnionNoticeLayer.lua:9
+msgid "fa bu"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/union/master/UnionNoticeLayer.lua:9
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/union/member/UnionMemberItem.lua:19
+msgid "rang xian"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/union/master/UnionNoticeLayer.lua:59
+#, c-format
+msgid "xian zhi %s ge zi"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/union/member/UnionMasterManageLayer.lua:34
+msgid "No Union Master Member data"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/union/member/UnionMemberItem.lua:11
+msgid "Reject"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/union/member/UnionMemberItem.lua:14
+msgid "sheng qian"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/union/member/UnionMemberItem.lua:15
+msgid "ti chu gong hui"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/union/member/UnionMemberItem.lua:20
+msgid "bian zhi"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/union/member/UnionMemberItem.lua:124
+#, c-format
+msgid "que ren ti chu %s ma?"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/union/member/UnionMemberItem.lua:250
+msgid "hot"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/union/member/UnionMemberItem.lua:270
+msgid "ru hui shi jian:"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/union/member/UnionMemberManageLayer.lua:34
+msgid "No Union Member Manage data"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/union/member/UnionMemberMenu.lua:13
+msgid "xin ren shen he"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/union/member/UnionMemberMenu.lua:19
+msgid "pu tong cheng yuan"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/union/member/UnionMemberMenu.lua:25
+msgid "guan li zu"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/union/member/UnionMemberNewLayer.lua:34
+msgid "No Union New Member data"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/views/main/worldmap/WorldMapLayer.lua:123
 msgid "da tong qian mian yi ge guan qia ji ke kai fang"
 msgstr ""
 
@@ -1727,6 +2383,12 @@ msgid "SAVING"
 msgstr ""
 
 #: /Volumes/HD1/works/yhq/client/src/game/widgets/main/ButtonGroup.lua:25
+#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/ButtonGroup.lua:140
+#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/ButtonGroup.lua:152
+#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/ButtonGroup.lua:194
+#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/ButtonGroup.lua:206
+#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/ButtonGroup.lua:260
+#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/ButtonGroup.lua:272
 msgid "DETAIL"
 msgstr ""
 
@@ -1739,95 +2401,129 @@ msgstr ""
 msgid "Rune need level %s!"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/ButtonGroup.lua:55
+#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/ButtonGroup.lua:54
 msgid "SKILL"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/ButtonGroup.lua:65
-#, c-format
-msgid "Skill need level %s!"
-msgstr ""
-
-#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/ButtonGroup.lua:73
+#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/ButtonGroup.lua:71
 msgid "EQUIPMENT"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/ButtonGroup.lua:129
+#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/ButtonGroup.lua:140
+#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/ButtonGroup.lua:194
+#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/ButtonGroup.lua:260
+msgid "wo de gong hui"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/ButtonGroup.lua:152
 #: /Volumes/HD1/works/yhq/client/src/game/widgets/main/ButtonGroup.lua:206
-#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/ButtonGroup.lua:226
+#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/ButtonGroup.lua:272
+msgid "cheng yuan guan li"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/ButtonGroup.lua:163
+#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/ButtonGroup.lua:229
+msgid "tui chu gong hui"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/ButtonGroup.lua:170
+#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/ButtonGroup.lua:236
+msgid "shi fou tui chu gong hui"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/ButtonGroup.lua:218
+#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/ButtonGroup.lua:284
+msgid "fa bu gong gao"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/ButtonGroup.lua:295
+msgid "jie san gong hui"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/ButtonGroup.lua:302
+msgid "shi fou jie san gong hui"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/ButtonGroup.lua:337
+#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/ButtonGroup.lua:412
+#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/ButtonGroup.lua:432
 msgid "SUMMARY"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/ButtonGroup.lua:155
+#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/ButtonGroup.lua:362
 msgid "BUFF"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/ButtonGroup.lua:195
+#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/ButtonGroup.lua:401
 msgid "KICKOUT"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/ButtonGroup.lua:248
+#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/ButtonGroup.lua:455
 msgid "ACCOUNT"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/ButtonGroup.lua:259
+#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/ButtonGroup.lua:466
 msgid "GIFT CARD"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/ButtonGroup.lua:270
+#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/ButtonGroup.lua:478
 msgid "GENERAL SETTING"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/ButtonGroup.lua:281
+#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/ButtonGroup.lua:489
 msgid "UPDATE"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/ButtonGroup.lua:287
+#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/ButtonGroup.lua:495
 msgid "UPDATE:Secret feature, reveal soon!"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/ButtonGroup.lua:294
+#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/ButtonGroup.lua:501
 msgid "MEDIA"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/ButtonGroup.lua:300
+#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/ButtonGroup.lua:507
 msgid "MEDIA:Secret feature, reveal soon!"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/ButtonGroup.lua:307
+#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/ButtonGroup.lua:513
 msgid "CREDITS"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/ButtonGroup.lua:313
+#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/ButtonGroup.lua:519
 msgid "CREDITS:Secret feature, reveal soon!"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/ButtonGroup.lua:329
+#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/ButtonGroup.lua:534
 msgid "ATLAS"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/ButtonGroup.lua:339
+#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/ButtonGroup.lua:544
 msgid "ESSENCE"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/ButtonGroup.lua:349
+#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/ButtonGroup.lua:554
 msgid "CHIP"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/ButtonGroup.lua:369
+#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/ButtonGroup.lua:574
 msgid "OTHER"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/ButtonGroup.lua:389
+#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/ButtonGroup.lua:594
 msgid "Equipped"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/ButtonGroup.lua:449
+#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/ButtonGroup.lua:654
 msgid "General"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/ButtonGroup.lua:459
+#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/ButtonGroup.lua:664
 msgid "Promotions"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/ButtonGroup.lua:674
+msgid "VIP GIFT"
 msgstr ""
 
 #: /Volumes/HD1/works/yhq/client/src/game/widgets/main/PBar.lua:62
@@ -1839,21 +2535,26 @@ msgid "none"
 msgstr ""
 
 #: /Volumes/HD1/works/yhq/client/src/game/widgets/main/item/CellElite.lua:61
-#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/item/CellEquip.lua:118
+#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/item/CellEquip.lua:116
 #: /Volumes/HD1/works/yhq/client/src/game/widgets/main/item/CellGem.lua:54
 #: /Volumes/HD1/works/yhq/client/src/game/widgets/main/item/CellRune.lua:98
 msgid "Fit"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/item/CellEquip.lua:113
+#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/item/CellEquip.lua:45
+#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/item/CellEquip.lua:74
+msgid "Power:"
+msgstr ""
+
+#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/item/CellEquip.lua:111
 msgid "Lv not enough"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/item/CellEquip.lua:120
+#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/item/CellEquip.lua:118
 msgid "Unfit"
 msgstr ""
 
-#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/item/CellEquip.lua:122
+#: /Volumes/HD1/works/yhq/client/src/game/widgets/main/item/CellEquip.lua:120
 msgid "Detail"
 msgstr ""
 
@@ -1878,6 +2579,9 @@ msgid "Assassin"
 msgstr ""
 
 #: /Volumes/HD1/works/yhq/client/src/game/widgets/main/item/Icon.lua:256
+msgid "special item"
+msgstr ""
+
 #: /Volumes/HD1/works/yhq/client/src/game/widgets/main/item/Icon.lua:272
 msgid "special property:"
 msgstr ""

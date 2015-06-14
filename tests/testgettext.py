@@ -1,6 +1,6 @@
 import os
-from zrong.gettext import Gettext
-from zrong.base import get_files
+from rookout.gettext import Gettext
+from rookout.base import get_files
 
 gt = None
 workdir = None

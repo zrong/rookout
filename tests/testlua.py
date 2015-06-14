@@ -1,6 +1,6 @@
 # The test is from https://github.com/SirAnthony/slpp
 
-import zrong.lua as lua
+import rookout.lua as lua
 import os
 
 def setup():

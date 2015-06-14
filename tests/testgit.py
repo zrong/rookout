@@ -1,4 +1,4 @@
-from zrong import git
+from rookout import git
 
 def setup():
     pass
