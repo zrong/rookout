@@ -1,1 +1,1 @@
-A python library written by zrong.
+A rookie's workout library by zrong

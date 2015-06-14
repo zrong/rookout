@@ -1,5 +1,11 @@
+########################################
+# git.py
 # port from https://github.com/SirAnthony/slpp
+# Modifier zrong(zengrong.net)
 #
+# Creation 2014-10-23
+# Last Editing 2015-06-14
+########################################
 """
 .. module:: lua
    :platform: Unix, Windows
@@ -9,7 +15,7 @@
 
 """
 import re
-from zrong.base import read_file
+from rookout.base import read_file
 
 ERRORS = {
     'unexp_table': u'Unexpected structure while parsing Lua string.',
@@ -268,11 +274,11 @@ lua = Lua()
 
 def decode_file(luafile):
     """将 lua文件 解析成 python 对象。
-    将 luafile 解析成字符串，然后调用 :func:`zrong.lua.decode()` 。
+    将 luafile 解析成字符串，然后调用 :func:`rookout.lua.decode()` 。
 
     :param str luafile: lua文件路径。
     :return: python 对象
-    :raise: :class:`zrong.base.ZrongError`
+    :raise: :class:`rookout.base.ZrongError`
 
     """
     luastr = read_file(luafile)
@@ -321,7 +327,7 @@ def decode(text):
 
     :param str text: lua字符串
     :return: python 对象
-    :raise: :class:`zrong.base.ZrongError`
+    :raise: :class:`rookout.base.ZrongError`
 
     """
     return lua.decode(text)

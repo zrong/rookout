@@ -1,7 +1,10 @@
+########################################
 # git.py
+# Author zrong(zengrong.net)
+#
 # Creation 2014-10-23
-# Author zrong
-
+# Last Editing 2015-06-14
+########################################
 """
 .. module:: git
    :platform: Unix, Windows
@@ -13,7 +16,7 @@
 
 import os
 import subprocess
-from zrong import slog
+from rookout import slog
 
 
 def call(path, *args):

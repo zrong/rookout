@@ -1,9 +1,9 @@
 ########################################
 # ftp.py
-# Author zrong
+# Author zrong(zengrong.net)
 #
 # Creation 2015-02-03
-# Last Editing 2015-01-30
+# Last Editing 2015-06-14
 ########################################
 
 """
@@ -17,7 +17,7 @@
 
 import os
 import ftplib
-from zrong import slog
+from rookout import slog
 
 def get_ftp(ftp_conf, debug=0):
     """得到一个 已经打开的FTP 实例，和一个 ftp 路径。
@@ -119,5 +119,5 @@ def check_ftp_conf(ftp_conf):
     or not ftp_conf.get('server') \
     or not ftp_conf.get('user') \
     or not ftp_conf.get('password'):
-        raise ZrongError('ftp_conf MUST contains following values:'
+        raise KeyError('ftp_conf MUST contains following values:'
                 'server,user,password !')

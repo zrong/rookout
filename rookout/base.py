@@ -3,7 +3,7 @@
 #
 # Author zrong
 # Creation 2014-09-23
-# Last Editing 2015-01-30
+# Last Editing 2015-06-14
 #########################################
 
 """
@@ -23,7 +23,7 @@ import shutil
 import hashlib
 import tempfile
 from string import Template
-from zrong import slog
+from rookout import slog
 
 
 class DictBase(dict):
@@ -284,7 +284,7 @@ def get_max_ver(fmt, filelist):
     """有一堆字符串，文件名均包含 %d.%d.%d 形式版本号，返回其中版本号最大的那个。
     我一般用它来检测一堆发行版中版本号最大的那个文件。
 
-    :param str fmt: 要检测测字符串形式，例如 zrong-%s.tar.gz ，其中 %s 会被正则替换。
+    :param str fmt: 要检测测字符串形式，例如 rookout-%s.tar.gz ，其中 %s 会被正则替换。
     :param list files: 字符串列表。
     :returns: 版本号最大的字符串。
     :rtype: str

@@ -1,9 +1,9 @@
 #########################################
 # gettext.py
 #
-# Author zrong
+# Author zrong(zengrong.net)
 # Creation 2015-03-04
-# Last Editing 
+# Last Editing 2015-06-14
 #########################################
 
 """
@@ -18,7 +18,7 @@
 import os
 import subprocess
 import tempfile
-from zrong import slog, ZrongError
+from rookout import slog
 
 class Gettext(object):
     """创建一个对象保存 gettext 的相关配置。
@@ -42,7 +42,7 @@ class Gettext(object):
 
         """
         # Create a temporary file to write pot file
-        pot_file = tempfile.NamedTemporaryFile(mode='wb', prefix='hhlb_', delete=False)
+        pot_file = tempfile.NamedTemporaryFile(mode='wb', prefix='rookout_', delete=False)
         pot_filename = pot_file.name
         slog.info('Create POT file [%s].', pot_filename)
         xargs = [self._xgettext,
@@ -56,7 +56,7 @@ class Gettext(object):
                 stderr=subprocess.STDOUT, 
                 universal_newlines=True)
         if len(txt) > 0:
-            raise(ZrongError(txt))
+            raise(ChildProcessError(txt))
         slog.info('Start merge [%s] to [%s].', pot_filename, po_file)
         xargs = [self._msgmerge, "-U", po_file, pot_filename]
         txt = subprocess.check_output(xargs, universal_newlines=True)
