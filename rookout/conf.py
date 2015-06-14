@@ -6,20 +6,30 @@
 # Last Editing 2015-06-14
 ########################################
 
+"""
+.. module:: conf
+   :platform: Unix, Windows
+   :synopsis: 对配置文件的封装。
+
+.. moduleauthor:: zrong(zengrong.net)
+
+"""
+
+import os
 import re
 from rookout import slog
 from rookout.base import (read_file, write_file)
 from configparser import (ConfigParser, NoSectionError)
 
 class PYConf(dict):
-    """作为配置文件的基类。
+    """基于 Python dict 的配置文件。
 
     dict 默认不适合当作配置文件对象使用。如要有下面几点不便：
     
     #. 对于不存在的 key，会 raise KeyError 错误；
     #. dict不能使用 ``.`` 语法访问。
 
-    :class:`PYConf` 解决了这些问题，还另外提供了一些方法在使用上更加方便。
+    :class:`rookout.PYConf` 解决了这些问题，还另外提供了一些方法在使用上更加方便。
 
     """ 
 
@@ -42,7 +52,7 @@ class PYConf(dict):
         :type adict: dict
         :param parent:  复制到哪个父对象。
                         若为 None 则复制到 self 。
-        :type parent: PYConf
+        :type parent: rookout.PYConf
 
         """
         if not parent:
@@ -96,6 +106,12 @@ class PYConf(dict):
         return True
 
 class INIConf(ConfigParser):
+    """对 INI 格式的配置文件做了一些变化，使其可以支持列表。
+
+    只需要将 section 的名称设置为 [@list name] 即可加入一个名称为 name 的 section。
+
+    这个 sectioni 中的每一行都作为列表的一项。
+    """ 
 
     _LIST_TMPL = r"""
         @(list)?                            # @ or @list

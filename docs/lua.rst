@@ -1,6 +1,6 @@
-zrong.lua module
-=================
+rookout.lua module
+===================
 
-.. automodule:: zrong.lua
+.. automodule:: rookout.lua
    :members: decode, decode_file, encode
    :show-inheritance:

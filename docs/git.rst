@@ -1,7 +1,7 @@
-zrong.git module
-=================
+rookout.git module
+====================
 
-.. automodule:: zrong.git
+.. automodule:: rookout.git
    :members:
    :undoc-members:
    :show-inheritance:

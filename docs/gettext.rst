@@ -1,7 +1,7 @@
-zrong.gettext module
-=================
+rookout.gettext module
+===========================
 
-.. automodule:: zrong.gettext
+.. automodule:: rookout.gettext
    :members:
    :undoc-members:
    :show-inheritance:

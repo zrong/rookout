@@ -14,9 +14,10 @@ Welcome to zrong's documentation!
    lua
    ftp
    gettext
+   conf
 
 Indices and tables
-==================
+===================
 
 * :ref:`genindex`
 * :ref:`modindex`

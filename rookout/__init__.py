@@ -15,7 +15,7 @@
 import logging
 
 __version__ = "0.4.0"
-__all__ = ['base', 'git', 'lua', 'ftp', 'gettext']
+__all__ = ['base', 'git', 'lua', 'ftp', 'gettext', 'conf']
 
 slog = logging.getLogger("system")
 """默认的系统 log。"""

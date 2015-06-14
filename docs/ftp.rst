@@ -1,7 +1,7 @@
-zrong.ftp module
-=================
+rookout.ftp module
+===================
 
-.. automodule:: zrong.ftp
+.. automodule:: rookout.ftp
    :members:
    :undoc-members:
    :show-inheritance:
