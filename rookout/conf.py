@@ -123,10 +123,16 @@ class INIConf(ConfigParser):
     def __init__(self):
         super().__init__(allow_no_value=True)
 
-    def list(self, section):
+    def _get_list_name(self, section):
         if not self.LISTCRE.match(section):
             section = "@list "+section
-        return self.options(section)
+        return section
+
+    def has_list(self, section):
+        return self.has_section(self._get_list_name(section))
+
+    def list(self, section):
+        return self.options(self._get_list_name(section))
 
     def lists(self):
         list_sections = []
@@ -135,3 +141,14 @@ class INIConf(ConfigParser):
             if m:
                 list_sections.append(m.group('header'))
         return list_sections
+
+def merge_INIConf(a, b):
+    """用 b 的内容覆盖 a 的内容（若重名），并返回 a
+    """
+    for sname in b.sections():
+        if a.has_section(sname):
+            for oname in b.options(sname):
+                a[key][oname] = b[sname][oname]
+        else:
+            a[sname] = b[sname]
+    return a
