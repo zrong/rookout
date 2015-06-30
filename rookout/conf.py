@@ -123,6 +123,10 @@ class INIConf(ConfigParser):
     def __init__(self):
         super().__init__(allow_no_value=True)
 
+    # override RawConfigParser to protect case.
+    def optionxform(self, optionstr):  
+        return optionstr
+
     def _get_list_name(self, section):
         if not self.LISTCRE.match(section):
             section = "@list "+section
