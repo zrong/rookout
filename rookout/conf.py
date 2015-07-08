@@ -121,7 +121,8 @@ class INIConf(ConfigParser):
     LISTCRE = re.compile(_LIST_TMPL, re.VERBOSE)
 
     def __init__(self):
-        super().__init__(allow_no_value=True)
+        # Only use the '=' as a delimiter
+        super().__init__(allow_no_value=True, delimiters=('='))
 
     # override RawConfigParser to protect case.
     def optionxform(self, optionstr):  

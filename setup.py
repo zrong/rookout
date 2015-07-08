@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name = "rookout",
-    version = "0.4.0",
+    version = "0.4.2",
     description = "A rookie's workout library by zrong.",
     author = "zrong",
     author_email = "zrongzrong@gmail.com",
