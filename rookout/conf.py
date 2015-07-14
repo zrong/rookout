@@ -153,7 +153,7 @@ def merge_INIConf(a, b):
     for sname in b.sections():
         if a.has_section(sname):
             for oname in b.options(sname):
-                a[key][oname] = b[sname][oname]
+                a[sname][oname] = b[sname][oname]
         else:
             a[sname] = b[sname]
     return a
