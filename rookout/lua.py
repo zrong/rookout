@@ -52,7 +52,7 @@ class Lua:
         if tstart < 0 and tend < 0:
             self.text = text
         elif tstart < 0 or tend < 0:
-            raise ZrongError(ERRORS['unexp_table'])
+            raise TypeError(ERRORS['unexp_table'])
         else:
             self.text = text[tstart:tend+1]
         self.at, self.ch, self.depth = 0, '', 0
@@ -222,7 +222,7 @@ class Lua:
             n = self.ch
             self.next_chr()
             if not self.ch or not self.ch.isdigit():
-                raise ZrongError(err)
+                raise TypeError(err)
             return n
         n = ''
         try:
@@ -241,10 +241,10 @@ class Lua:
                     n += self.ch
                     self.next_chr()
                     if not self.ch or self.ch not in ('+', '-'):
-                        raise ZrongError(ERRORS['mfnumber_sci'])
+                        raise TypeError(ERRORS['mfnumber_sci'])
                     n += next_digit(ERRORS['mfnumber_sci'])
                     n += self.digit()
-        except ZrongError as e:
+        except TypeError as e:
             slog.error(e)
             return 0
         try:
@@ -278,7 +278,7 @@ def decode_file(luafile):
 
     :param str luafile: lua文件路径。
     :return: python 对象
-    :raise: :class:`rookout.base.ZrongError`
+    :raise: :class:`TypeError`
 
     """
     luastr = read_file(luafile)
@@ -327,7 +327,7 @@ def decode(text):
 
     :param str text: lua字符串
     :return: python 对象
-    :raise: :class:`rookout.base.ZrongError`
+    :raise: :class:`TypeError`
 
     """
     return lua.decode(text)

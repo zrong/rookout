@@ -150,7 +150,7 @@ def get_md5(path):
         md5obj = hashlib.md5()
         md5obj.update(f.read())
         return md5obj.hexdigest()
-    raise ZrongError("Error when get md5 for %s!"%path)
+    raise FileNotFoundError("Error when get md5 for %s!"%path)
 
 def create_zip(files, trim_arcname=None, target_file=None, **zipfile_args):
     """创建一个 zip 文件。
