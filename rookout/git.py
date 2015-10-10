@@ -19,7 +19,7 @@ import subprocess
 from rookout import slog
 
 
-def call(path, *args):
+def call(path, *args, encoding="utf-8"):
     """使用 subprocess.check_output 调用 git 命令。
 
     :param str path: git 仓库文件夹路径。
@@ -32,9 +32,15 @@ def call(path, *args):
     returncode = 0
     output = None
     try:
+        # 2015-10-10 zrong
+        # 在 windows 上使用 universal_newlines=True
+        # 会导致输出信息为中文时出现编码错误
+        # 原因是 check_out 中读入 stdout 内容的 read 方法没有传递编码参数
+        # 因此不再使用 universal_newlines=True 这个参数
+        # 而改用直接返回 bytes，然后对其解码
         output = subprocess.check_output(get_args(path, *args), 
-                stderr=subprocess.STDOUT,
-                universal_newlines=True)
+                stderr=subprocess.STDOUT)
+        output = output.decode(encoding=encoding)
     except subprocess.CalledProcessError as err:
         returncode = err.returncode
         output = err.output
