@@ -3,7 +3,7 @@
 # Author zrong(zengrong.net)
 #
 # Creation 2014-10-23
-# Last Editing 2015-06-14
+# Last Editing 2016-01-18
 ########################################
 """
 .. module:: git
@@ -46,7 +46,7 @@ def call(path, *args, encoding="utf-8"):
         output = err.output
     return returncode, output
 
-def get_args(path, *args, bare=False):
+def get_args(path, *args, work_tree=True, bare=False):
     """获取可被 subprogress 执行的 git 参数 list。
 
     :param str path: git 仓库文件夹路径。
@@ -56,11 +56,14 @@ def get_args(path, *args, bare=False):
     """
     base = [ 'git' ]
     if path:
+        base.append('-C')
+        base.append(path)
         if bare:
             base.append('--bare')
             base.append("--git-dir="+path)
         else:
             base.append("--git-dir="+os.path.join(path, ".git"))
+        if work_tree:
             base.append("--work-tree="+path)
     for arg in args:
         base.append(arg)
@@ -148,14 +151,14 @@ def update_submodules(path, init=True, update=True):
     """
     succ = None
     if init:
-        arg = get_args(path, 'submodule', 'init')
+        arg = get_args(path, 'submodule', 'init', work_tree=False)
         slog.info(' '.join(arg))
         succ = subprocess.call(arg)
         if succ>0:
             slog.error('git execute error!')
             return succ
     if update:
-        arg = get_args(path, "submodule", "update")
+        arg = get_args(path, "submodule", "update", work_tree=False)
         slog.info(' '.join(arg))
         succ = subprocess.call(arg)
         if succ>0:
