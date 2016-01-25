@@ -13,8 +13,9 @@
 """
 
 import logging
+import sys
 
-__version__ = "0.4.6"
+__version__ = "0.4.7"
 __all__ = ['base', 'git', 'lua', 'ftp', 'gettext', 'conf']
 
 slog = logging.getLogger("system")
@@ -65,6 +66,8 @@ class ConsoleColor():
 class ColoredStreamHandler(logging.StreamHandler):
     def format(self, record):
         msg = super(ColoredStreamHandler, self).format(record)
+        if sys.platform == 'win32':
+            return msg
         if record.levelno >= logging.ERROR:
             msg = ConsoleColor.RED+msg+ConsoleColor.RESET
         elif record.levelno == logging.WARNING:
