@@ -15,7 +15,7 @@
 import logging
 import sys
 
-__version__ = "0.4.7"
+__version__ = "0.4.8"
 __all__ = ['base', 'git', 'lua', 'ftp', 'gettext', 'conf']
 
 slog = logging.getLogger("system")
