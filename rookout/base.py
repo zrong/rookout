@@ -220,3 +220,33 @@ def get_max_ver(fmt, filelist):
         return None
     return name
 
+def merge_dicts(d1, d2):
+    """合并两个无限深度的 dict
+    会自动合并 list 格式
+
+    :param dict d1: 被合并的 dict
+    :param dict d2: 待合并的 dict
+    :returns: 一个新的生成器对象
+    :rtype: generator
+
+    """
+    for k in set(d1.keys()).union(d2.keys()):
+        if k in d1 and k in d2:
+            if isinstance(d1[k], dict) and isinstance(d2[k], dict):
+                yield (k, dict(merge_dicts(d1[k], d2[k])))
+            elif isinstance(d1[k], list):
+                if isinstance(d2[k], list):
+                    d1[k].extend(d2[k])
+                else:
+                    d1[k].append(d2[k])
+                yield(k, d1)
+            else:
+                # If one of the values is not a dict, you can't continue merging it.
+                # Value from second dict overrides one in first and we move on.
+                yield (k, d2[k])
+                # Alternatively, replace this with exception raiser to alert you of value conflicts
+        elif k in d1:
+            yield (k, d1[k])
+        else:
+            yield (k, d2[k])
+
