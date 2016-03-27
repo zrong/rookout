@@ -95,7 +95,7 @@ def get_files(path, ext=[], include=True):
             else:
                 yield os.path.join(p, f)
 
-def read_file(file_path):
+def read_file(file_path, **kws):
     """读取文本文件的内容。
 
     :param str file_path: 文件路径。
@@ -103,11 +103,15 @@ def read_file(file_path):
     :rtype: str
 
     """
-    with open(file_path, mode="r",encoding="utf-8") as afile:
+    kw = {"mode":"r", "encoding":"utf-8"}
+    if kws:
+        for k,v in kws.items():
+            kw[k] = v
+    with open(file_path, **kw) as afile:
         txt = afile.read()
     return txt
 
-def write_file(file_path, txt):
+def write_file(file_path, txt, **kws):
     """将文本内容写入文件。
 
     :param str file_path: 文件路径。
@@ -119,7 +123,11 @@ def write_file(file_path, txt):
         if not os.path.isdir(upDir):
             os.makedirs(upDir)
 
-    with open(file_path, mode="w",encoding="utf-8") as afile:
+    kw = {"mode":"w", "encoding":"utf-8"}
+    if kws:
+        for k,v in kws.items():
+            kw[k] = v
+    with open(file_path, **kw) as afile:
         afile.write(txt)
 
 def write_by_templ(templ, target, sub_value, safe=False):
