@@ -95,18 +95,19 @@ def upload_dir(dir_name, upload_dir, ftp_conf):
         ftp.mkd(dir_name)
     ftp.cwd(dir_name)
     slog.info('Uploading "%s" to "%s/%s" ......'%(upload_dir, ftpStr, dir_name))
-    subDirs = ftp.nlst()
-    rootLen = len(upload_dir)+1
+    rootLen = len(upload_dir) + 1
+
     for r,d,fl in os.walk(upload_dir):
         if r.split('/')[-1].startswith('.'):
             continue
         for sdir in d:
-            if not sdir.startswith('.') \
-            and sdir not in subDirs:
-                dirPath = os.path.join(r, sdir)[rootLen:]
-                ftp.mkd(dirPath)
+            if not sdir.startswith('.'):
+                dirPath = r[rootLen:]
+                if sdir not in ftp.nlst(dirPath):
+                    dir_name = os.path.join(dirPath, sdir)
+                    ftp.mkd(dir_name)
         for sf in fl:
-            filePath = os.path.join(r, sf) 
+            filePath = os.path.join(r, sf)
             f = open(filePath, 'rb')
             ftpPath = filePath[rootLen:]
             slog.info('%s -> %s', filePath, ftpPath)
